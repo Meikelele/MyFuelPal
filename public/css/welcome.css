@@ -1,0 +1,120 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-text-myfuelpal
+{
+    width: 343px;
+
+    color: #2B2B2B;
+    text-align: center;
+    
+    font-size: 34px;
+    font-style: bold;
+    font-weight: 700;
+
+}
+
+.container-subtext
+{
+    width: 343px;
+    flex-shrink: 0;
+
+    color: #7A7A7A;
+    font-size: 17px;
+    font-weight: 500;
+    
+    text-align: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.container-button-signup
+{
+    width: 343px;
+    height: 58px;
+    flex-shrink: 0;
+
+    border-radius: 14px;
+    background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
+
+    align-items: center;
+    
+}
+
+.container-button-signup > p
+{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-button-login
+{
+    width: 343px;
+    height: 58px;
+    flex-shrink: 0;
+
+    border-radius: 14px;
+    background: #18CE2A;
+
+    align-items: center;
+    text-align: center;
+}
+
+.container-button-login > p
+{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-button-loginwithfb
+{
+    width: 343px;
+    height: 60px;
+    flex-shrink: 0;
+
+    border-radius: 14px;
+    background: #3B5998;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.container-button-loginwithfb > p
+{
+    font-weight: bold;
+    color: #F6F7FA;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-brands
+{
+    color: white;
+}
+
+button
+{
+    border: 0;
+}
+
+button:active
+{
+    transform: scale(0.98);
+}
+
+button:hover
+{
+    transform: scale(0.98);
+}

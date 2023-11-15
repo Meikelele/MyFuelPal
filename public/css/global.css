@@ -1,0 +1,79 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav 
+{
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+main
+{
+    /* jaka roznica miedzy % a vw */
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-column-center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+}
+
+main > .elements
+{
+    background-color: beige;
+    width: calc((100vw / 3) * 2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;
+}
+
+main > .sidebar
+{
+    background-color: rgb(234, 139, 71);
+    width: calc(100vw / 3);
+    align-self: flex-start;
+}
+
+.elements > .container > img 
+{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+    /* zamiast siatki GRID 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em; */
+}
+
+ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2em;
+
+}
+
+.flex-row-center-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}

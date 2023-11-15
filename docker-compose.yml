@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/app/
+    links:
+      - php
+
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/app/
+
+  db:
+      build:
+        context: .
+        dockerfile: docker/db/Dockerfile
+      ports:
+        - "5433:5432"
+
+
+# docker-compose up
+# komenda tworzy konetener na podstaiwe pliku docker-compose.yaml
+
+# docker-compose ps
+# daje informacje o otwartych aktualnie kontenerach
+
+# docker-compose stop
+# komenda do zatrzymanai naszych kontenerow
+
+# git init
+# git remote add origin https://github.com/Meikelele/MyFuelPal.git
+# git checkout -b lab02 
+# git status || sprawdzamy jakie zmiany zaszly w projekcie
+# git add . || dodajemy pliki do commita
+# git comit -m "Added docker configuration for dupa" || zrobienie commita, spakowanie
+# git push || wyslanie commita na zdalne repo
+
+# git config --global push.autoSetupRemote true
