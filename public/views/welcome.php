@@ -11,7 +11,7 @@
     
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/welcome.css">
-    <title>Document</title>
+    <title>welcome</title>
 </head>
 <body>
     <main class="flex-column-center">

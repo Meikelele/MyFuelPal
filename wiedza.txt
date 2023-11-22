@@ -1,0 +1,3 @@
+ROUTING - to mechanizm gdzie zadania http trafiaja do kodu ktory je obsluguje.
+w routerze mowimy co sie ma dziac gdy uzytkownik trafi na adres ktory chce odwiedzic.
+
