@@ -7,11 +7,21 @@ class DefaultController extends AppController {
 
     public function index() {
         //TODO display login.html
+        $this->render('welcome');
+    }
+
+    public function login() {
+        //TODO display projects.html
         $this->render('login');
     }
 
-    public function projects() {
+    public function dashboard() {
         //TODO display projects.html
-        $this->render('projects');
+        $this->render('dashboard');
+    }
+
+    public function singup() {
+        //TODO display projects.html
+        $this->render('singup');
     }
 }

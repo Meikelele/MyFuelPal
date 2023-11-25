@@ -1,6 +1,8 @@
 body
 {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
 }
 
 nav 
@@ -14,7 +16,6 @@ nav
 
 main
 {
-    /* jaka roznica miedzy % a vw */
     width: 100vw;
     height: 100vh;
 }
@@ -25,8 +26,6 @@ main
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-
 }
 
 main > .elements

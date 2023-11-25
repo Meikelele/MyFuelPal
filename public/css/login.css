@@ -1,0 +1,28 @@
+
+
+.container-text-header
+{
+    width: 25vw;
+
+    color: #2b2b2b;
+    text-align: center;
+    
+    font-size: 2rem;
+    font-style: bold;
+    font-weight: 700;
+
+}
+
+.container-subtext
+{
+    width: 25vw;
+
+    color: #7A7A7A;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    
+    text-align: center;
+    align-items: center;
+}

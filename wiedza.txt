@@ -1,3 +1,18 @@
 ROUTING - to mechanizm gdzie zadania http trafiaja do kodu ktory je obsluguje.
 w routerze mowimy co sie ma dziac gdy uzytkownik trafi na adres ktory chce odwiedzic.
 
+23 XI 2023
+- utworzenie security controller
+widok w html z logowaniem
+podczepic get i post
+formularz rejestracji
+formualrz logowaniem
+
+
+
+
+
+
+
+
+

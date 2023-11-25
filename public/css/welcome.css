@@ -1,85 +1,71 @@
-body
-{
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .container-text-myfuelpal
 {
-    width: 343px;
+    width: 25vw;
 
-    color: #2B2B2B;
+    color: #2b2b2b;
     text-align: center;
     
-    font-size: 34px;
+    font-size: 3rem;
     font-style: bold;
     font-weight: 700;
-
+}
+.container-text-myfuelpal > p
+{
+    margin: 0rem;
 }
 
 .container-subtext
 {
-    width: 343px;
-    flex-shrink: 0;
+    width: 25vw;
 
     color: #7A7A7A;
-    font-size: 17px;
+    font-size: 0.9rem;
     font-weight: 500;
     
     text-align: center;
     align-items: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 .container-button-signup
 {
-    width: 343px;
-    height: 58px;
-    flex-shrink: 0;
+    width: 30vw;
+    height: 8vh;
+    margin-top: 1rem;
 
-    border-radius: 14px;
+    border-radius: 1rem;
     background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
-
-    align-items: center;
     
-}
-
-.container-button-signup > p
-{
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .container-button-login
 {
-    width: 343px;
-    height: 58px;
-    flex-shrink: 0;
+    width: 30vw;
+    height: 8vh;
+    margin-bottom: 1rem;
 
-    border-radius: 14px;
+
+    border-radius: 1rem;
     background: #18CE2A;
-
-    align-items: center;
-    text-align: center;
 }
 
-.container-button-login > p
+.container-button-login > p, .container-button-signup > p, .container-button-loginwithfb > p
 {
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    color: white;
 }
 
 .container-button-loginwithfb
 {
-    width: 343px;
-    height: 60px;
+    width: 30vw;
+    height: 8vh;
     flex-shrink: 0;
 
-    border-radius: 14px;
+    border-radius: 1rem;
     background: #3B5998;
 
     text-align: center;
@@ -90,16 +76,8 @@ body
     gap: 0.5em;
 }
 
-.container-button-loginwithfb > p
-{
-    font-weight: bold;
-    color: #F6F7FA;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .fa-brands
+/* logo facebooka */
 {
     color: white;
 }
@@ -107,6 +85,7 @@ body
 button
 {
     border: 0;
+    cursor: pointer;
 }
 
 button:active

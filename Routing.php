@@ -28,6 +28,9 @@ class Routing {
         //obiekty moga byc tworzone na podstawie stringa
         $object = new $controller;
 
+        //otwarcie samego adresu localhost:8080
+        $action = $action ?: 'index';
+
         $object->$action();
 
     }
