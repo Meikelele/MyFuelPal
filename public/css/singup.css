@@ -1,3 +1,69 @@
-body{
-    font-family: 'Roboto', sans-serif;
+body
+{
+    color: #2b2b2b;
+}
+
+.container-text-header
+{
+    width: 30vw;
+
+    color: #2b2b2b;
+    text-align: center;
+    
+    font-size: 2rem;
+    font-style: bold;
+    font-weight: 700;
+
+}
+
+.container-text-header > p
+{
+    margin: 0rem;
+}
+
+.container-button-singup
+{
+    width: 30vw;
+    height: 8vh;
+    margin-top: 1rem;
+
+    border-radius: 1rem;
+    background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
+    
+}
+
+.container-button-singup > p
+{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+button
+{
+    border: 0;
+    cursor: pointer;
+}
+
+button:active
+{
+    transform: scale(0.98);
+}
+
+button:hover
+{
+    transform: scale(0.98);
+}
+
+.footer
+{
+    width: 30vw;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.important
+{
+    font-weight: 700;
 }
