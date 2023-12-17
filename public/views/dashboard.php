@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="public/css/global.css">
+    <link rel="stylesheet" href="public/css/dashboard.css">
+
+    <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous"></script>
+    
+    <title>dashboard</title>
 </head>
-
 <body>
-    <nav class="flex-row-center-center">
-        <div>IMG</div>
-        <ul>
-            <li>HOME</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Create</li>
-        </ul>
-    </nav>
-    <!-- <h1>Dashboard</h1> -->
-    <main class="flex-row-center-center">
-        <div class="elements">
-            <div class="container"> <img src="https://picsum.photos/300/200?random=1" alt="Placeholder Image 1">
-                <p>Short Description 1</p>
+    <div class="base-container">
+        <nav>
+            <div class="logo">
+                <p>MyFuelPal</p>
             </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=2" alt="Placeholder Image 2">
-                <p>Short Description 2</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=3" alt="Placeholder Image 3">
-                <p>Short Description 3</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=4" alt="Placeholder Image 4">
-                <p>Short Description 4</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=5" alt="Placeholder Image 5">
-                <p>Short Description 5</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=6" alt="Placeholder Image 6">
-                <p>Short Description 6</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=7" alt="Placeholder Image 7">
-                <p>Short Description 7</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=8" alt="Placeholder Image 8">
-                <p>Short Description 8</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=9" alt="Placeholder Image 9">
-                <p>Short Description 9</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=10" alt="Placeholder Image 10">
-                <p>Short Description 10</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=11" alt="Placeholder Image 11">
-                <p>Short Description 11</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=12" alt="Placeholder Image 12">
-                <p>Short Description 12</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=13" alt="Placeholder Image 13">
-                <p>Short Description 13</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=14" alt="Placeholder Image 14">
-                <p>Short Description 14</p>
-            </div>
-            <div class="container"> <img src="https://picsum.photos/300/200?random=15" alt="Placeholder Image 15">
-                <p>Short Description 15</p>
-            </div>
-        </div>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#home" class="button">Home</a>
+                </li>
 
-        <div class="sidebar">SIDEBAR</div>
-    </main>
+                <li>
+                    <i class="fa-solid fa-car"></i>
+                    <a href="#home" class="button">My Cars</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gas-pump"></i>
+                    <a href="#home" class="button">My Fuelpal</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#home" class="button">Profile</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="#home" class="button">Settings</a>
+                </li>
+
+
+
+            </ul>
+        </nav>
+
+        <main>
+            <section class="mycars">
+            <div class="your-cars-top-bar">
+                <p>Yours cars</p>
+                <a href="#view-all-cars">View all</a>
+            </div>
+
+            <div class="car-tile">
+                <img src="public/auto_sokrates.jpg" alt="gruz_sokrates.jpg">
+                <div>
+                    <h2>nazwa_gruza</h2>
+                    <p>marka_model_pojemnoscSilnika_silnik</p>
+                </div>
+                <div class="license_plate">
+                    <div class="country_section">PL</div>
+                    <div class="license_number">BL 19957</div>
+                </div>
+            </div>
+
+            </section>
+            <section class="myfuelpal-bar"></section>
+        </main>
+    </div>
+
+
+
+
 </body>
+
+
+
 
 </html>

@@ -7,8 +7,8 @@
     Routing::get('', 'DefaultController');
     Routing::get('index', 'DefaultController');
     Routing::get('login', 'DefaultController');
-    Routing::get('dashboard', 'DefaultController');
     Routing::get('singup', 'DefaultController');
+    Routing::get('dashboard', 'DefaultController');
     Routing::run($path);
 
 ?>

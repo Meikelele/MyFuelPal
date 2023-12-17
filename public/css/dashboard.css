@@ -1,0 +1,89 @@
+main{
+    width: 75vw;
+    background-color: beige;
+    color: black;
+
+}
+
+.mycars{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+.mycars > .your-cars-top-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mycars > .your-cars-top-bar > a{
+    color: black;
+    margin: 1em;
+    margin-right: 2em;
+    justify-content: center;
+}
+
+.mycars > .your-cars-top-bar > p{
+    margin: 0;
+    margin: 1em 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.car-tile > img {
+    width: 20em;
+    height: 10em;
+    border-radius: 1em 1em 0em 0em;
+
+
+}
+
+.car-tile {
+    margin-left: 2em;
+}
+
+
+
+/* ---------------------------- */
+/* STYLOWANIE LICENSE PLATE     */
+/* ---------------------------- */
+.license_plate
+{
+    background-color: #fcfcfc;
+  width: 7em;
+  height: 1.75em;
+  border: 1px solid black;
+  border-radius: 0.25em;
+  display: flex;
+  
+  font-size: 1.25em;
+  font-weight: bold;
+  
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  
+}
+.country_section{
+  width: 2em;
+  height: 100%;
+  background-color: #3056bf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: white;
+  border-radius: 0.25em 0 0 0.25em;
+}
+
+.license_number{
+    width: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+}

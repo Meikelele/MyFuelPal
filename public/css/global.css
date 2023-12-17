@@ -1,44 +1,14 @@
-body
-{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-nav 
-{
-    background-color: black;
-    color: white;
-    height: 80px;
-    width: 100%;
-    font-size: 1.5rem;
-}
-
-main
-{
-    width: 100vw;
-    height: 100vh;
-}
-
-.flex-column-center
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 main > .elements
 {
-    background-color: beige;
+    background-color: #fcfcfc;
     width: calc((100vw / 3) * 2);
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
     padding: 2em;
 }
+
 
 main > .sidebar
 {
@@ -59,15 +29,31 @@ main > .sidebar
     gap: 2em;
     padding: 2em; */
 }
+/* ======================================================================== */
+/*              WLASCIWA CZESC GLOBAL CSS                                   */
+/* ======================================================================== */
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
 
-ul
+main
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-column-center
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    gap: 2em;
-
 }
 
 .flex-row-center-center
@@ -75,6 +61,91 @@ ul
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.base-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.base-container > nav > .logo > p{
+    font-size: 2em;
+    width: 60%;
+    margin: 2em auto 1em auto
+}
 
 
+.base-container > nav{
+    width: 25vw;
+    height: 100%;
+    background-color: #fcfcfc;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
+
+}
+
+.base-container > nav > ul > li > a{
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+.base-container > nav > ul > li > i{
+    font-size: 1.5em;
+}
+
+.base-container > nav > ul > li > .button{
+    margin-left: 0.5em;
+    text-align: left;
+    letter-spacing: 0.7px;
+    padding: 0.2em;
+    width: 60%;
+    color: black;
+    cursor: pointer;
+}
+
+.base-container > nav > ul > li:hover{
+    transform: scale(0.98);
+}
+
+.base-container > nav > ul{
+    font-size: 1em;
+    list-style-type: none;
+    letter-spacing: 0.72px;
+    height: 100%;
+    width: calc(100% - 40px);
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    color: black;
+
+}
+
+.base-container > nav > ul > li {
+    background-color: white;
+    text-align: center;
+    margin-bottom: 1em;
+    color: black;
+    border: 1px solid white;
+    border-radius: 0.5em; 
+    padding: 0.3em 0;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.base-container > nav > ul > li:last-child{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.base-container > nav > ul > li > i {
+    font-size: 1em;
 }

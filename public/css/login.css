@@ -65,7 +65,7 @@ button:hover
     text-align: center;
     margin-top: 1.25em;
     margin-bottom: 1.25em;
-    color: white;
+    color: beige;
 }
 
 .form
@@ -103,5 +103,5 @@ button:hover
 .input:focus + .placeholder, .input:not(:placeholder-shown) + .placeholder {
     top: -0.625rem;
     color: #04AA6D;
-    background-color: #fff;
+    background-color: beige;
 }
