@@ -20,4 +20,8 @@ class DefaultController extends AppController {
     public function dashboard() {
         $this->render('dashboard');
     }
+
+//    public function addProject() {
+//        $this->render('test-upload');
+//    }
 }

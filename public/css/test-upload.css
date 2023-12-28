@@ -1,0 +1,12 @@
+section.project-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10em;
+}
+
+.project-form > form{
+    display: flex;
+    flex-direction: column;
+}
+

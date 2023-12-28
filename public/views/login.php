@@ -15,26 +15,45 @@
     <main class="flex-column-center">
         <div class="container-text-header">
             <p>Welcome back!</p>
+
             <p class="container-subtext">Fill in yur details to login</p>
         </div>
 
-       <form class="form">
-            <div class="input-group">
-                <input type="text" class="input">
-                <label class="placeholder">Login</label>    
+        <div class="login-container">
+        <form class="login" action="login" method="POST">
+            <div class="messages">
+                <?php
+                if(isset($messages)){
+                    foreach ($messages as $message){
+                        echo $message;
+                    }
+                }
+                ?>
             </div>
-        </form> 
 
-        <form class="form">
-            <div class="input-group">
-                <input type="password" class="input">
-                <label class="placeholder">Password</label>    
-            </div>
-        </form> 
+            <input name="email" type="text" placeholder="email@email.com">
+            <input name="password" type="password" placeholder="password">
+            <button type="submit">LOGIN</button>
+        </form>
+        </div>
 
-        <a href="#">
-        <button class="container-button-login"><p>Login</p></button>
-        </a>
+<!--       <form class="form" action="login" method="POST">-->
+<!--            <div class="input-group">-->
+<!--                <input type="text" class="input">-->
+<!--                <label class="placeholder">Login</label>    -->
+<!--            </div>-->
+<!--        </form> -->
+<!---->
+<!--        <form class="form">-->
+<!--            <div class="input-group">-->
+<!--                <input type="password" class="input">-->
+<!--                <label class="placeholder">Password</label>    -->
+<!--            </div>-->
+<!--        </form> -->
+<!---->
+<!---->
+<!--        <button class="container-button-login" type="submit">Login</button>-->
+
 
         
 

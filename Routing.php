@@ -1,6 +1,8 @@
 <?php
 
 require_once 'src/controllers/DefaultController.php';
+require_once 'src/controllers/SecurityController.php';
+require_once 'src/controllers/ProjectController.php';
 
 class Routing {
 
@@ -9,6 +11,13 @@ class Routing {
 
     //metoda ktora pozwoli wstawic odpowiedni kotroler do okreslonego URL
     public static function get($url, $controller){
+        self::$routes[$url] = $controller;
+
+    }
+
+    public static function post($url, $controller)
+    //dane z formualrza przekazujemy za pomoca POST
+    {
         self::$routes[$url] = $controller;
 
     }

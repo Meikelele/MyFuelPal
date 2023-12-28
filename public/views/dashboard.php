@@ -59,10 +59,11 @@
             </div>
 
             <div class="car-tile">
-                <img src="public/auto_sokrates.jpg" alt="gruz_sokrates.jpg">
+                <img src="public/uploads/<?= $project->getImage() ?>" alt="gruz_sokrates.jpg">
                 <div>
-                    <h2>nazwa_gruza</h2>
-                    <p>marka_model_pojemnoscSilnika_silnik</p>
+                    <h2><?= $project->getTitle() ?></h2>
+<!--                    <p>marka_model_pojemnoscSilnika_silnik</p>-->
+                    <p><?= $project->getDescription() ?></p>
                 </div>
                 <div class="license_plate">
                     <div class="country_section">PL</div>

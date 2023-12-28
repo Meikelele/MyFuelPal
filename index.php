@@ -6,9 +6,11 @@
 
     Routing::get('', 'DefaultController');
     Routing::get('index', 'DefaultController');
-    Routing::get('login', 'DefaultController');
+    //Routing::get('login', 'DefaultController');
     Routing::get('singup', 'DefaultController');
     Routing::get('dashboard', 'DefaultController');
-    Routing::run($path);
 
-?>
+    Routing::post('login', 'SecurityController');
+    Routing::post('addProject', 'ProjectController');
+
+    Routing::run($path);
