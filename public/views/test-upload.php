@@ -54,12 +54,14 @@
     <main>
         <section class="mycars">
             <div class="your-cars-top-bar">
-                <p>Yours cars</p>
-                <a href="#view-all-cars">View all</a>
+                <p>Adding new car</p>
+            </div>
+            <div class="subtext">
+                <p>Fill your car detail</p>
             </div>
 
             <section class="project-form">
-            <h1>UPLOAD</h1>
+
             <form action="addProject" method="POST" ENCTYPE="multipart/form-data">
                 <?php
                 if(isset($messages)){
@@ -68,17 +70,25 @@
                     }
                 }
                 ?>
-                <input name="title" type="text" placeholder="title">
-                <textarea name="description" rows="5" placeholder="description"></textarea>
+                <input type="file" name="Choose file">
+                <input name="nickname" type="text" placeholder="Nickname for your car">
+                <input name="brand" type="text" placeholder="Brand">
+                <input name="model" type="text" placeholder="Model">
+                <input name="cubic-cap" type="text" placeholder="Cubic capacity">
+                <input name="license-plate" type="text" placeholder="License plate">
+                <input name="type-of-fuel" type="text" placeholder="Type of fuel">
+                <input name="course" type="text" placeholder="Course">
+<!--                <textarea name="description" rows="5" placeholder="Some note..."></textarea>-->
 
-                <input type="file" name="file">
-                <button type="submit">SEND</button>
+
+                <button type="submit">SAVE</button>
 
 
             </form>
             </section>
 
         </section>
+
         <section class="myfuelpal-bar"></section>
     </main>
 </div>

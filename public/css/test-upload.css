@@ -2,11 +2,100 @@ section.project-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 10em;
+    align-items: center;
 }
 
-.project-form > form{
+.mycars{
     display: flex;
     flex-direction: column;
+    margin-top: 5em;
+    color: black;
+}
+
+.mycars > .your-cars-top-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mycars > .subtext > p{
+    color: gray;
+    margin: 0;
+    margin-left: 1.5em;
+    font-size: 1em;
+}
+
+.mycars > .your-cars-top-bar > a{
+    color: black;
+
+    margin-right: 2em;
+    justify-content: center;
+}
+
+.mycars > .your-cars-top-bar > p{
+    margin: 0;
+    margin-left: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.mycars > .project-form > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+    margin-top: 5em;
+
+}
+
+.mycars > .project-form > form > input {
+    margin-bottom: 1.5em;
+}
+
+.mycars > .project-form > form > input[type=text] {
+    height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.mycars > .project-form > form > input[type=file]{
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
+.mycars > .project-form > form > button{
+
+    /*width: 30vw;*/
+    height: 4em;
+    margin-top: 1rem;
+
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+
+    border-radius: 1rem;
+    background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
+
+}
+
+button
+{
+    border: 0;
+    cursor: pointer;
+}
+
+button:active
+{
+    transform: scale(0.98);
+}
+
+button:hover
+{
+    transform: scale(0.98);
 }
 
