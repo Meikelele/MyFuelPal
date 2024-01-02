@@ -2,14 +2,11 @@
 
 .container-text-myfuelpal
 {
-    width: 25vw;
-
     color: #2b2b2b;
     text-align: center;
     
-    font-size: 3rem;
-    font-style: bold;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 800;
 }
 .container-text-myfuelpal > p
 {
@@ -18,20 +15,15 @@
 
 .container-subtext
 {
-    width: 25vw;
-
     color: #7A7A7A;
-    font-size: 0.9rem;
-    font-weight: 500;
-    
+    font-size: 1.4rem;
     text-align: center;
-    align-items: center;
 }
 
 .container-button-signup
 {
-    width: 30vw;
-    height: 8vh;
+    width: 26rem;
+    height: 5rem;
     margin-top: 1rem;
 
     border-radius: 1rem;
@@ -41,28 +33,28 @@
 
 .container-button-login
 {
-    width: 30vw;
-    height: 8vh;
+    width: 26rem;
+    height: 5rem;
     margin-bottom: 1rem;
-
 
     border-radius: 1rem;
     background: #18CE2A;
 }
 
-.container-button-login > p, .container-button-signup > p, .container-button-loginwithfb > p
+.container-button-login > p,
+.container-button-signup > p,
+.container-button-loginwithfb > p
 {
+    font-size: 1.75rem;
     font-weight: bold;
-    text-align: center;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
     color: white;
+    margin: 0;
 }
 
 .container-button-loginwithfb
 {
-    width: 30vw;
-    height: 8vh;
+    width: 26rem;
+    height: 5rem;
     flex-shrink: 0;
 
     border-radius: 1rem;
@@ -80,6 +72,7 @@
 /* logo facebooka */
 {
     color: white;
+    font-size: 1.75rem;
 }
 
 button

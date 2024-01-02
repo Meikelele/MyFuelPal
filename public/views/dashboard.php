@@ -20,6 +20,7 @@
             <div class="logo">
                 <p>MyFuelPal</p>
             </div>
+
             <ul>
                 <li>
                     <i class="fa-solid fa-house"></i>
@@ -45,17 +46,15 @@
                     <i class="fa-solid fa-gear"></i>
                     <a href="#home" class="button">Settings</a>
                 </li>
-
-
-
             </ul>
         </nav>
 
         <main>
             <section class="mycars">
+
             <div class="your-cars-top-bar">
                 <p>Yours cars</p>
-                <a href="#view-all-cars">View all</a>
+                <button>View all</button>
             </div>
 
             <div class="car-tile">
@@ -72,7 +71,14 @@
             </div>
 
             </section>
-            <section class="myfuelpal-bar"></section>
+
+<!--            <section class="myfuelpal-section">-->
+                <div class="myfuaelpal-bar">
+                    <p>Your Fuelpal</p>
+                    <button>View all</button>
+                </div>
+
+<!--            </section>-->
         </main>
     </div>
 

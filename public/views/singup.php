@@ -15,45 +15,26 @@
 </head>
 <body>
     <main class="flex-column-center">
+
         <div class="container-text-header">
             <p>Let's start here</p>
             <p class="container-subtext">Fill in yur details to begin</p>
         </div>
 
        <form class="form">
-            <div class="input-group">
-                <input type="text" class="input">
-                <label class="placeholder">Fullname</label>    
-            </div>
-        </form> 
+           <input name="fullname" type="text" placeholder="Fullname">
+           <input name="email" type="text" placeholder="Email">
+           <input name="password" type="password" placeholder="Password">
 
-        <form class="form">
-            <div class="input-group">
-                <input type="text" class="input">
-                <label class="placeholder">E-mail</label>    
-            </div>
-        </form> 
+           <button type="submit"><p>Sing up</p></button>
 
-        <form class="form">
-            <div class="input-group">
-                <input type="password" class="input">
-                <label class="placeholder">Password</label>    
-            </div>
-        </form> 
-
-
-        <a href="#">
-        <button class="container-button-singup"><p>Sing up</p></button>
-        </a>
+        </form>
         
         <div class="footer">
             <p>By singing in, I agree with <span class="important">Terms of Use</span> and <span class="important">Privacy Policy</span></p>
         </div>
 
-        
-
     </main>
-    
 
 </body>
 </html>

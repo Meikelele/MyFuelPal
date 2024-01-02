@@ -5,45 +5,62 @@ body
 
 .container-text-header
 {
-    width: 30vw;
-
     color: #2b2b2b;
     text-align: center;
-    
-    font-size: 2rem;
-    font-style: bold;
-    font-weight: 700;
-
-}
-
-.container-text-header > p
-{
+    font-size: 4rem;
+    font-weight: 800;
     margin: 0rem;
+    margin-bottom: 1rem;
+
+
 }
 
-.container-button-singup
-{
-    width: 30vw;
-    height: 8vh;
-    margin-top: 1rem;
-
-    border-radius: 1rem;
-    background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
-    
-}
-
-.container-button-singup > p
-{
-    font-weight: bold;
+.container-text-header > .container-subtext{
+    color: #7A7A7A;
+    font-size: 1.4rem;
     text-align: center;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 30vw;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 button
 {
+    width: 26rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+    border-radius: 1rem;
+    background: #18CE2A;
+
     border: 0;
     cursor: pointer;
+}
+
+button > p
+{
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+button:active
+{
+    transform: scale(0.98);
+}
+
+button:hover
+{
+    transform: scale(0.98);
 }
 
 button:active
@@ -58,8 +75,8 @@ button:hover
 
 .footer
 {
-    width: 30vw;
-    font-size: 0.75rem;
+    width: 25rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
