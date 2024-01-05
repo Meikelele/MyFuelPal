@@ -8,8 +8,7 @@ section.project-form{
 .mycars{
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
-    color: black;
+    margin-top: 8rem;
 }
 
 .mycars > .your-cars-top-bar
@@ -20,37 +19,43 @@ section.project-form{
     align-items: center;
 }
 
-.mycars > .subtext > p{
-    color: gray;
-    margin: 0;
-    margin-left: 1.5em;
-    font-size: 1em;
-}
-
-.mycars > .your-cars-top-bar > a{
-    color: black;
-
-    margin-right: 2em;
-    justify-content: center;
-}
-
 .mycars > .your-cars-top-bar > p{
     margin: 0;
     margin-left: 1em;
     font-size: 1.5em;
     font-weight: bold;
 }
+
+.container-subtext
+{
+    color: #7A7A7A;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.mycars > .your-cars-top-bar > button
+{
+    font-size: 1.9rem;
+    border: none;
+    background: #fcfcfc;
+    margin-right: 3rem;
+    text-decoration: underline;
+}
+
+.mycars > .your-cars-top-bar > button:hover,
+.mycars > .your-cars-top-bar > button:active
+{
+    transform: scale(0.98);
+}
+
+
 .mycars > .project-form > form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 20vw;
-    margin-top: 5em;
+    width: 26rem;
+    margin-top: 4rem;
 
-}
-
-.mycars > .project-form > form > input {
-    margin-bottom: 1.5em;
 }
 
 .mycars > .project-form > form > input[type=text] {
@@ -67,35 +72,68 @@ section.project-form{
     margin-bottom: 1.5em;
 }
 
+.mycars > .project-form > form > input[type=date]{
+    margin: auto;
+    margin-bottom: 1.5em;
+
+    height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.mycars > .project-form > form > input[type=time]{
+    margin: auto;
+    margin-bottom: 1.5em;
+
+    height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.mycars > .project-form > form > textarea
+{
+    font-size: 1.5rem;
+}
+
 .mycars > .project-form > form > button{
 
-    /*width: 30vw;*/
-    height: 4em;
+    width: 26rem;
+    height: 5.5rem;
     margin-top: 1rem;
 
     font-weight: bold;
-    text-align: center;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
+   
+    margin: 0;
+    margin-top: 1.5rem;
 
+    border: none;
     border-radius: 1rem;
     background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
 
+    font-size: 1.75rem;
+    color: white;
+
 }
 
-button
-{
-    border: 0;
-    cursor: pointer;
-}
-
-button:active
+form > button:active,
+form > button:hover
 {
     transform: scale(0.98);
 }
 
-button:hover
+input
 {
-    transform: scale(0.98);
+    width: 25rem;
+    margin-bottom: 1rem;
+
+    padding-left: 1em;
+    border: none;
+    font-size: 1.5rem;
 }
 

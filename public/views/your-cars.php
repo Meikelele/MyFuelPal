@@ -56,42 +56,10 @@
                 <p>Yours cars</p>
                 <button>View all</button>
             </div>
-            <div class="just-line"></div>
-            <div class="your-fuelpal-bar">
-                    <p>Your Fuelpal</p>
-                    <button>View all</button>
-            </div>
-
-            <div class="fuel-note">
-                <div class="fuel-note-top">
-                    <div class="first">
-                        <i class="fa-solid fa-clock"></i>
-                        <div class="first-date">
-                            <p class="first-text">10:25</p>
-                            <p class="first-subtext">Monday, 10th Oct 2023 Gruz - E36</p>
-
-                        </div>
-                    </div>
-                    <div class="fuel-note-standing-line"></div>
-                    <div class="second">
-                        <i class="fa-solid fa-gas-pump"></i>
-                        <div class="second-date">
-                            <p class="second-text">200 zł</p>
-                            <p class="second-subtext">34,5 L</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="fuel-note-horizontal-line"></div>
-                    <div class="third">
-                        <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>
-                    </div>
+            <div class="just-line"></div>           
 
 
-            </div>
-
-
-            <!-- <div class="car-tile">
+            <div class="car-tile">
                 <img src="public/uploads/<?= $project->getImage() ?>" alt="gruz_sokrates.jpg">
                 <div>
                     <h2><?= $project->getTitle() ?></h2>
@@ -101,7 +69,7 @@
                     <div class="country_section">PL</div>
                     <div class="license_number">BL 19957</div>
                 </div>
-            </div> -->
+            </div>
 
             </section>
 

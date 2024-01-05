@@ -9,6 +9,10 @@
     //Routing::get('login', 'DefaultController');
     Routing::get('singup', 'DefaultController');
     Routing::get('dashboard', 'DefaultController');
+    Routing::get('yourcars', 'DefaultController');
+    Routing::get('yourfuelpal', 'DefaultController');
+    Routing::get('addfuelnote', 'DefaultController');
+    Routing::get('profile', 'DefaultController');
 
     Routing::post('login', 'SecurityController');
     Routing::post('addProject', 'ProjectController');

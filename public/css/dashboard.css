@@ -1,40 +1,22 @@
 main{
-    background-color: beige;
+    /* background-color: beige; */
     color: black;
     margin-left: 0;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 
 }
 
-main > .myfuelpal-bar > .myfuelpal-section{
-    display: flex;
-    flex-direction: column;
-    margin-top: 8rem;
-}
-
-main > .myfuelpal-section > .myfuelpal-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-main > .myfuelpal-section > .myfuelpal-bar > p
+.mycars
 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 0;
-    margin-left: 2rem;
-}
-.mycars{
     display: flex;
     flex-direction: column;
     margin-top: 8rem;
 }
 
-.mycars > .your-cars-top-bar
+.mycars > .your-cars-top-bar,
+.mycars > .your-fuelpal-bar
 {
     display: flex;
     flex-direction: row;
@@ -42,12 +24,20 @@ main > .myfuelpal-section > .myfuelpal-bar > p
     align-items: center;
 }
 
-.mycars > .your-cars-top-bar > p
+.mycars > .your-cars-top-bar > p,
+.mycars > .your-fuelpal-bar > p
 {
     font-size: 4rem;
     font-weight: bold;
     margin: 0;
     margin-left: 2rem;
+}
+
+.just-line
+{
+    width: 97%; 
+    margin: auto;
+    border: 1.50px #E8E8E8 solid;
 }
 
 .car-tile > img {
@@ -65,7 +55,7 @@ main > .myfuelpal-section > .myfuelpal-bar > p
 button{
     font-size: 1.9rem;
     border: none;
-    background: beige;
+    background: #fcfcfc;
     margin-right: 3rem;
     text-decoration: underline;
 }
@@ -117,3 +107,137 @@ button:hover
   align-items: center;
   background-color: #fcfcfc;
 }
+
+/* ---------------------------- */
+/*      STYLOWANIE FUEL NOTE    */
+/* ---------------------------- */
+
+.fuel-note
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    width: 36rem;
+    height: 11rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    box-shadow: 0px 10px 30px 3px rgba(5, 16, 55, 0.15);
+    border-radius: 6px;
+
+
+}
+
+.fuel-note-top
+{
+    display: flex;
+}
+
+.first
+{
+    width: 21rem;
+    height: 8rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.first > p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.first > i
+{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.first > .first-date,
+.second > .second-date
+{
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.first > .first-date > .first-text,
+.second > .second-date > .second-text
+{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    text-align: center;
+}
+
+.first > .first-date > .first-subtext,
+.second > .second-date > .second-subtext
+{
+    color: gray;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.second
+{
+    background-color: white;
+    width: 15rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.second > i
+{
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+.third
+{
+    display: flex;
+    background-color: white;
+    height: 3rem;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+}
+
+.third > p
+{
+    margin: 0;
+    text-align: center;
+    margin-left: 1rem;
+    font-weight: 500; 
+    word-wrap: break-word
+}
+
+.fuel-note-standing-line
+{
+    height: 90%;
+    margin: auto;
+    border: 0.1rem #E8E8E8 solid;
+}
+
+.fuel-note-horizontal-line
+{
+    width: 90%;
+    margin: auto;
+    border: 0.1rem #E8E8E8 solid;
+}
+
+
+
+

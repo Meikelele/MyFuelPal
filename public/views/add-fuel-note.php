@@ -12,7 +12,7 @@
 
     <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous"></script>
 
-    <title>test-upload</title>
+    <title>add-fuel-note</title>
 </head>
 <body>
 <div class="base-container">
@@ -54,7 +54,7 @@
     <main>
         <section class="mycars">
             <div class="your-cars-top-bar">
-                    <p>Adding new car</p>
+                    <p>Adding fuel note</p>
                     <button>View all</button>
             </div>
 
@@ -67,15 +67,13 @@
                     }
                 }
                 ?>
-                <input type="file" name="Choose file">
-                <input name="nickname" type="text" placeholder="Nickname for your car">
-                <input name="brand" type="text" placeholder="Brand">
-                <input name="model" type="text" placeholder="Model">
-                <input name="cubic-cap" type="text" placeholder="Cubic capacity">
-                <input name="license-plate" type="text" placeholder="License plate">
+                <input name="price" type="text" placeholder="Price">
+                <input name="liters" type="text" placeholder="Liters">
+                <input name="hour" type="time" placeholder="hour">
+                <input name="date" type="date" placeholder="date">
                 <input name="type-of-fuel" type="text" placeholder="Type of fuel">
-                <input name="course" type="text" placeholder="Course">
-<!--                <textarea name="description" rows="5" placeholder="Some note..."></textarea>-->
+                <input name="car" type="text" placeholder="Car">
+                <textarea name="description" rows="5" placeholder="Some note..."></textarea>
 
 
                 <button type="submit">SAVE</button>

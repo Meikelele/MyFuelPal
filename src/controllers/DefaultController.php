@@ -21,6 +21,23 @@ class DefaultController extends AppController {
         $this->render('dashboard');
     }
 
+    public function yourcars() {
+        $this->render('your-cars');
+    }
+
+    public function yourfuelpal() {
+        $this->render('your-fuelpal');
+    }
+
+    public function addfuelnote() {
+        $this->render('add-fuel-note');
+    }
+
+    public function profile() {
+        $this->render('profile');
+    }
+
+
 //    public function addProject() {
 //        $this->render('test-upload');
 //    }

@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="public/css/global.css">
-    <link rel="stylesheet" href="public/css/test-upload.css">
+    <link rel="stylesheet" href="public/css/profile.css">
 
     <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous"></script>
 
-    <title>test-upload</title>
+    <title>profile</title>
 </head>
 <body>
 <div class="base-container">
@@ -52,36 +52,11 @@
     </nav>
 
     <main>
-        <section class="mycars">
-            <div class="your-cars-top-bar">
-                    <p>Adding new car</p>
-                    <button>View all</button>
-            </div>
-
-            <section class="project-form">
-            <form action="addProject" method="POST" ENCTYPE="multipart/form-data">
-                <?php
-                if(isset($messages)){
-                    foreach ($messages as $message){
-                        echo $message;
-                    }
-                }
-                ?>
-                <input type="file" name="Choose file">
-                <input name="nickname" type="text" placeholder="Nickname for your car">
-                <input name="brand" type="text" placeholder="Brand">
-                <input name="model" type="text" placeholder="Model">
-                <input name="cubic-cap" type="text" placeholder="Cubic capacity">
-                <input name="license-plate" type="text" placeholder="License plate">
-                <input name="type-of-fuel" type="text" placeholder="Type of fuel">
-                <input name="course" type="text" placeholder="Course">
-<!--                <textarea name="description" rows="5" placeholder="Some note..."></textarea>-->
-
-
-                <button type="submit">SAVE</button>
-
-
-            </form>
+        <section class="">
+            
+            
+            
+            
             </section>
 
         </section>

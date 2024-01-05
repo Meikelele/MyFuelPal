@@ -53,21 +53,7 @@ button > p
     margin: 0;
 }
 
-button:active
-{
-    transform: scale(0.98);
-}
-
-button:hover
-{
-    transform: scale(0.98);
-}
-
-button:active
-{
-    transform: scale(0.98);
-}
-
+button:active,
 button:hover
 {
     transform: scale(0.98);

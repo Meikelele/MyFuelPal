@@ -51,12 +51,6 @@
 
         <main>
             <section class="mycars">
-
-            <div class="your-cars-top-bar">
-                <p>Yours cars</p>
-                <button>View all</button>
-            </div>
-            <div class="just-line"></div>
             <div class="your-fuelpal-bar">
                     <p>Your Fuelpal</p>
                     <button>View all</button>
@@ -90,19 +84,33 @@
 
             </div>
 
+            <div class="fuel-note">
+                <div class="fuel-note-top">
+                    <div class="first">
+                        <i class="fa-solid fa-clock"></i>
+                        <div class="first-date">
+                            <p class="first-text">20:48</p>
+                            <p class="first-subtext">Thursday, 4th Jan 2024 Piramidka</p>
 
-            <!-- <div class="car-tile">
-                <img src="public/uploads/<?= $project->getImage() ?>" alt="gruz_sokrates.jpg">
-                <div>
-                    <h2><?= $project->getTitle() ?></h2>
-                    <p><?= $project->getDescription() ?></p>
-                </div>
-                <div class="license_plate">
-                    <div class="country_section">PL</div>
-                    <div class="license_number">BL 19957</div>
-                </div>
-            </div> -->
+                        </div>
+                    </div>
+                    <div class="fuel-note-standing-line"></div>
+                    <div class="second">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <div class="second-date">
+                            <p class="second-text">66,54 zł</p>
+                            <p class="second-subtext">10 L</p>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="fuel-note-horizontal-line"></div>
+                    <div class="third">
+                        <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>
+                    </div>
+
+
+            </div>
             </section>
 
                 

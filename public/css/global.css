@@ -36,10 +36,10 @@ body
 {
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
-    color: #fcfcfc;
+    /* color: #fcfcfc; */
     margin: 0;
     padding: 0;
-    background-color: beige;
+    background-color: #fcfcfc;
 }
 
 main
