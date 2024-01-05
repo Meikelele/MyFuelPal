@@ -11,6 +11,7 @@ services:
       - .:/app/
     links:
       - php
+      # TODO podlaczzzyc php i postgres oraz pgadmin???
 
   php:
     build:
@@ -19,12 +20,25 @@ services:
     volumes:
       - .:/app/
 
-  db:
-      build:
-        context: .
-        dockerfile: docker/db/Dockerfile
-      ports:
-        - "5433:5432"
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: test_db
+    ports:
+      - "5433:5432"
+
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
 
 
 # docker-compose up
