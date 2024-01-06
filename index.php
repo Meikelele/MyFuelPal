@@ -13,6 +13,7 @@
     Routing::get('yourfuelpal', 'DefaultController');
     Routing::get('addfuelnote', 'DefaultController');
     Routing::get('profile', 'DefaultController');
+    Routing::get('settings', 'DefaultController');
 
     Routing::post('login', 'SecurityController');
     Routing::post('addProject', 'ProjectController');

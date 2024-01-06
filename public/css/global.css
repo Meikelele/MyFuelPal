@@ -1,4 +1,7 @@
-
+html
+{
+    font-size: 10px;
+}
 main > .elements
 {
     background-color: #fcfcfc;
@@ -35,7 +38,7 @@ main > .sidebar
 body
 {
     font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-size: 1rem;
     /* color: #fcfcfc; */
     margin: 0;
     padding: 0;

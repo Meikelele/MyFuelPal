@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="public/css/global.css">
-    <link rel="stylesheet" href="public/css/profile.css">
+    <link rel="stylesheet" href="public/css/settings.css">
 
     <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous"></script>
 
-    <title>profile</title>
+    <title>settings</title>
 </head>
 <body>
 <div class="base-container">
@@ -52,22 +52,16 @@
     </nav>
 
     <main>
-        <section class="profile">
-            <div class="profile-logo">
-                 <img src="public/images/triss-merigold-avatar.jpeg" alt="profile-logo.png">
+        <section class="settings">
+            <div class="settings-text">
+                <p class="header">Settings</p>
             </div>
 
-            <div class="profile-name-with-email">
-                <p class="header">Triss Merigold</p>
-                <p class="email-text">triss.merigold@admin.pk.edu.pl</p>
-            </div>
-            
-            
-            
-            
-            </section>
+
+
 
         </section>
+
     </main>
 </div>
 

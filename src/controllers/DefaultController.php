@@ -36,6 +36,9 @@ class DefaultController extends AppController {
     public function profile() {
         $this->render('profile');
     }
+    public function settings() {
+        $this->render('settings');
+    }
 
 
 //    public function addProject() {
