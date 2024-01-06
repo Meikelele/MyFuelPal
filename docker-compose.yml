@@ -11,7 +11,19 @@ services:
       - .:/app/
     links:
       - php
-      # TODO podlaczzzyc php i postgres oraz pgadmin???
+    networks:
+      - pg-network
+
+  db:
+    build:
+      context: .
+      dockerfile: docker/db/Dockerfile
+    ports:
+      - "5432:5432"
+    networks:
+      - pg-network
+    volumes:
+      - pg-data:/var/lib/postgresql/data
 
   php:
     build:
@@ -19,44 +31,22 @@ services:
       dockerfile: docker/php/Dockerfile
     volumes:
       - .:/app/
-
-  postgres:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: root
-      POSTGRES_DB: test_db
-    ports:
-      - "5433:5432"
+    networks:
+      - pg-network
 
   pgadmin:
-    container_name: pgadmin4_container
-    image: dpage/pgadmin4
-    restart: always
+    image: dpage/pgadmin4:latest
+    container_name: pg-admin
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     ports:
       - "5050:80"
+    networks:
+      - pg-network
 
+networks:
+  pg-network:
 
-# docker-compose up
-# komenda tworzy konetener na podstaiwe pliku docker-compose.yaml
-
-# docker-compose ps
-# daje informacje o otwartych aktualnie kontenerach
-
-# docker-compose stop
-# komenda do zatrzymanai naszych kontenerow
-
-# git init
-# git remote add origin https://github.com/Meikelele/MyFuelPal.git
-# git checkout -b lab02 
-# git status || sprawdzamy jakie zmiany zaszly w projekcie
-# git add . || dodajemy pliki do commita
-# git comit -m "Added docker configuration for dupa" || zrobienie commita, spakowanie
-# git push || wyslanie commita na zdalne repo
-
-# git config --global push.autoSetupRemote true
-# dupa dupa
+volumes:
+  pg-data:
