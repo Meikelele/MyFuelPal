@@ -40,7 +40,8 @@ main{
     border: 1.50px #E8E8E8 solid;
 }
 
-.car-tile > img {
+.car-tile > img
+{
     width: 20em;
     height: 10em;
     border-radius: 1em 1em 0em 0em;
@@ -48,11 +49,13 @@ main{
 
 }
 
-.car-tile {
+.car-tile
+{
     margin-left: 2em;
 }
 
-button{
+button
+{
     font-size: 1.9rem;
     border: none;
     background: #fcfcfc;

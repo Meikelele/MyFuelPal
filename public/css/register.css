@@ -70,3 +70,12 @@ button:hover
 {
     font-weight: 700;
 }
+
+.no-valid
+{
+    box-shadow: 0 0 0.2em red;
+    outline: none;
+    color: red;
+    border: 3px solid red;
+
+}

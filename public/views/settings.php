@@ -57,6 +57,23 @@
                 <p class="header">Settings</p>
             </div>
 
+            <div class="chapter">
+                <div class="title-header">
+                    <p>Security</p>
+                </div>
+                <div class="option">
+                    <p>Change password</p>
+                    <button>change</button>
+                </div>
+                <div class="option">
+                    <p>Change username</p>
+                    <button>change</button>
+                </div>
+                <div class="option">
+                    <p>Change email</p>
+                    <button>change</button>
+                </div>
+            </div>
 
 
 

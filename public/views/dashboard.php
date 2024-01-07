@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="public/css/global.css">
     <link rel="stylesheet" href="public/css/dashboard.css">
 
-    <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="../public/js/mobile-menu.js" defer></script>
     
     <title>dashboard</title>
 </head>
@@ -21,6 +22,11 @@
                 <p>MyFuelPal</p>
             </div>
 
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        <div id="myLinks">
             <ul>
                 <li>
                     <i class="fa-solid fa-house"></i>
@@ -47,6 +53,9 @@
                     <a href="#home" class="button">Settings</a>
                 </li>
             </ul>
+
+        </div>
+
         </nav>
 
         <main>

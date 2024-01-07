@@ -68,6 +68,14 @@ main
 /* ======================================================================== */
 /*                       SYLOWANIE NAWIGACJI                                */
 /* ======================================================================== */
+.base-container > nav > a.icon {
+    font-size: 3rem;
+    color: black;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
 .base-container
 {
     display: flex;
@@ -95,19 +103,23 @@ main
     justify-content: flex-start;
     color: black;
 
+
+    overflow: hidden;
+    position: relative;
+
 }
 
-.base-container > nav > ul > li > a{
+.base-container > nav > #myLinks > ul > li > a{
     text-decoration: none;
     display: inline-block;
     line-height: 1.5em;
 }
 
-.base-container > nav > ul > li > i{
+.base-container > nav > #myLinks > ul > li > i{
     font-size: 1.5em;
 }
 
-.base-container > nav > ul > li > .button{
+.base-container > nav > #myLinks > ul > li > .button{
     margin-left: 0.5em;
     text-align: left;
     letter-spacing: 0.7px;
@@ -117,11 +129,11 @@ main
     cursor: pointer;
 }
 
-.base-container > nav > ul > li:hover{
+.base-container > nav > #myLinks > ul > li:hover{
     transform: scale(0.98);
 }
 
-.base-container > nav > ul{
+.base-container > nav > #myLinks > ul{
     font-size: 1.8rem;
     list-style-type: none;
     letter-spacing: 0.72px;
@@ -134,7 +146,7 @@ main
 
 }
 
-.base-container > nav > ul > li {
+.base-container > nav > #myLinks > ul > li {
     background-color: white;
     text-align: center;
     margin-bottom: 1em;
@@ -146,13 +158,19 @@ main
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
-.base-container > nav > ul > li:last-child{
+.base-container > nav > #myLinks > ul > li:last-child{
     position: absolute;
     bottom: 0;
     width: 100%;
 
 }
 
-.base-container > nav > ul > li > i {
+.base-container > nav > #myLinks > ul > li > i {
     font-size: 1em;
+}
+
+@media screen and (max-device-width: 760px) {
+
+
+
 }

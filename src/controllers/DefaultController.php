@@ -13,8 +13,8 @@ class DefaultController extends AppController {
         $this->render('login');
     }
 
-    public function singup() {
-        $this->render('singup');
+    public function register() {
+        $this->render('register');
     }
 
     public function dashboard() {

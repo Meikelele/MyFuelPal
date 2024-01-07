@@ -7,7 +7,7 @@
     Routing::get('', 'DefaultController');
     Routing::get('index', 'DefaultController');
     //Routing::get('login', 'DefaultController');
-    Routing::get('singup', 'DefaultController');
+    Routing::get('register', 'DefaultController');
     Routing::get('dashboard', 'DefaultController');
     Routing::get('yourcars', 'DefaultController');
     Routing::get('yourfuelpal', 'DefaultController');

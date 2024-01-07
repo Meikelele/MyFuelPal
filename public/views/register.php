@@ -9,22 +9,27 @@
     
     <link rel="stylesheet" href="public/css/global.css">
     <link rel="stylesheet" href="public/css/login.css">
-    <link rel="stylesheet" href="public/css/singup.css">
+    <link rel="stylesheet" href="public/css/register.css">
+
+    <script type="text/javascript" src="../public/js/script.js" defer></script>
     
     <title>SingUp</title>
 </head>
 <body>
     <main class="flex-column-center">
 
+
+
         <div class="container-text-header">
             <p>Let's start here</p>
             <p class="container-subtext">Fill in yur details to begin</p>
         </div>
 
-       <form class="form">
+       <form class="form" action="register" method="POST">
            <input name="fullname" type="text" placeholder="Fullname">
            <input name="email" type="text" placeholder="Email">
            <input name="password" type="password" placeholder="Password">
+           <input name="confirmedPassword" type="password" placeholder="Confirm Password">
 
            <button type="submit"><p>Sing up</p></button>
 
