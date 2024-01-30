@@ -6,7 +6,6 @@
 
     Routing::get('', 'DefaultController');
     Routing::get('index', 'DefaultController');
-    //Routing::get('login', 'DefaultController');
 
     Routing::get('dashboard', 'DefaultController');
     Routing::get('yourcars', 'DefaultController');
@@ -15,8 +14,11 @@
     Routing::post('addcar', 'DefaultController');
     Routing::post('addVehicle', 'VehicleController');
     Routing::post('yourcars', 'VehicleController');
+//    Routing::post('dashboard', 'VehicleController');
     Routing::get('profile', 'DefaultController');
     Routing::get('settings', 'DefaultController');
+    Routing::get('API', 'APIController');
+    Routing::get('adminpanel', 'DefaultController');
 
     Routing::post('register', 'SecurityController');
     Routing::post('logout', 'SecurityController');

@@ -12,7 +12,7 @@
 
     <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous"></script>
     
-    <title>dashboard</title>
+    <title>your-cars</title>
 </head>
 <body>
 
@@ -35,45 +35,18 @@ include 'common/nav.php'
                         <div class="car-tile">
                             <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">
                             <div>
-                                <h2>Gruzik</h2>
-                                <p>Gowno w papierku po cukierku</p>
+                                <h2><?= $vehicle->getNickname();?>:</h2>
+                                <p><?= $vehicle->getNote();?></p>
                             </div>
                             <div class="license_plate">
-                                <div class="country_section">PL</div>
-                                <div class="license_number">KPR 14901</div>
+                                <div class="country_section"><?= $vehicle->getCountryoforigin();?></div>
+                                <div class="license_number"><?= $vehicle->getPlatenumber();?></div>
                             </div>
                         </div>
                     <?php endforeach; ?>
-<!--                    <div class="car-tile">-->
-<!--                        <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">-->
-<!--                        <div>-->
-<!--                            <h2>Gruzik</h2>-->
-<!--                            <p>Gowno w papierku po cukierku</p>-->
-<!--                        </div>-->
-<!--                        <div class="license_plate">-->
-<!--                            <div class="country_section">PL</div>-->
-<!--                            <div class="license_number">KPR 14901</div>-->
-<!--                        </div>-->
-<!--                    </div>-->
+
                 </div>
-
-
-
-<!--            <div class="car-tile">-->
-<!--                <img src="public/uploads/--><?php //= $project->getImage() ?><!--" alt="gruz_sokrates.jpg">-->
-<!--                <div>-->
-<!--                    <h2>--><?php //= $project->getTitle() ?><!--</h2>-->
-<!--                    <p>--><?php //= $project->getDescription() ?><!--</p>-->
-<!--                </div>-->
-<!--                <div class="license_plate">-->
-<!--                    <div class="country_section">PL</div>-->
-<!--                    <div class="license_number">BL 19957</div>-->
-<!--                </div>-->
-<!--            </div>-->
-
             </section>
-
-                
         </main>
 
     <nav class="mobile-menu">
@@ -92,10 +65,5 @@ include 'common/nav.php'
         <a href="#setting">
             <i class="fa-solid fa-gear"></i>
         </a>
-
-
-
-
 </body>
-
 </html>

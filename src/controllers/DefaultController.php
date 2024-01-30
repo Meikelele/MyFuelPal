@@ -1,6 +1,8 @@
 <?php
 
 require_once 'AppController.php';
+require_once __DIR__.'/../models/Vehicle.php';
+require_once __DIR__.'/../repository/VehicleRepository.php';
 
 class DefaultController extends AppController {
 
@@ -29,7 +31,9 @@ class DefaultController extends AppController {
             header('Location: /index');
         }
 
-        $this->render('dashboard');
+        $repo = new VehicleRepository();
+        $vehicles = $repo->getVehicles($_SESSION['User']);
+        $this->render('dashboard', ['vehicles' => $vehicles]);
     }
 
     public function yourcars() {
@@ -57,6 +61,10 @@ class DefaultController extends AppController {
     }
     public function settings() {
         $this->render('settings');
+    }
+
+    public function adminpanel() {
+        $this->render('adminpanel');
     }
 
 

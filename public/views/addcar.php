@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +11,12 @@
     <link rel="stylesheet" href="public/css/addfuelnote.css">
 
     <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous"></script>
+    <script src="./public/js/drop-down-list.js" defer></script>
+    <script src="./public/js/add_car_validation.js" defer></script>
 
     <title>add-car</title>
 </head>
-<body>
+<body onload="loadData()">
 
 <?php
 include 'common/nav.php'
@@ -34,25 +35,32 @@ include 'common/nav.php'
         <section class="project-form">
             <form action="addVehicle" method="POST" ENCTYPE="multipart/form-data">
                 <?php
-                if(isset($messages)){
-                    foreach ($messages as $message){
+                if (isset($messages)) {
+                    foreach ($messages as $message) {
                         echo $message;
                     }
                 }
                 ?>
-<!--                <input type="file" name="Choose file">-->
+                <!--                <input type="file" name="Choose file">-->
                 <input name="nickname" type="text" placeholder="Nickname">
-<!--                <input name="brand" type="text" placeholder="Brand">-->
-                <select name="brand">
+                <!--                <input name="brand" type="text" placeholder="Brand">-->
+                <select name="brand" onchange="getModel()">
                     <option value=""></option>
-                    <option value="1">BMW</option>
-                    <option value="2">AUDI</option>
                 </select>
-                <input name="model" type="text" placeholder="Model">
+
+                <select name="model">
+                    <option value=""></option>
+                </select>
+                <!--                <input name="model" type="text" placeholder="Model">-->
                 <input name="course" type="text" placeholder="Course">
                 <input name="license_number" type="text" placeholder="License number">
                 <input name="cof" type="text" placeholder="Country of origin">
-                <input name="type_of_fuel" type="text" placeholder="Type of fuel">
+
+
+                <select name="typeoffuel">
+                    <option value=""></option>
+                </select>
+                <!--                <input name="type_of_fuel" type="text" placeholder="Type of fuel">-->
                 <textarea name="description" rows="5" placeholder="Some note..."></textarea>
 
                 <button type="submit">SAVE</button>
@@ -63,11 +71,7 @@ include 'common/nav.php'
 </main>
 
 
-
-
 </body>
-
-
 
 
 </html>

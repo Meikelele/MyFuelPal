@@ -34,62 +34,21 @@ include 'common/nav.php'
                     <a href="/yourcars">View all</a>
                 </div>
 
-                <div class="car-tiles">
-                    <div class="car-tile">
-                        <img src="public/images/lemon_lambo.jpeg" alt="gruz_sokrates.jpg">
-                        <div class="car-tile-box">
-                            <h2>Gruzik</h2>
-                            <p>Gowno w papierku po cukierku</p>
+                <div id="cars">
+                    <?php foreach ($vehicles as $vehicle) : ?>
+                        <div class="car-tile">
+                            <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">
+                            <div>
+                                <h2><?= $vehicle->getNickname();?>:</h2>
+                                <p><?= $vehicle->getNote();?></p>
+                            </div>
+                            <div class="license_plate">
+                                <div class="country_section"><?= $vehicle->getCountryoforigin();?></div>
+                                <div class="license_number"><?= $vehicle->getPlatenumber();?></div>
+                            </div>
                         </div>
-                        <div class="license_plate">
-                            <div class="country_section">PL</div>
-                            <div class="license_number">KPR 14901</div>
-                        </div>
-                    </div>
-                    <div class="car-tile">
-                        <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">
-                        <div class="car-tile-box">
-                            <h2>Gruzik</h2>
-                            <p>Gowno w papierku po cukierku</p>
-                        </div>
-                        <div class="license_plate">
-                            <div class="country_section">PL</div>
-                            <div class="license_number">KPR 14901</div>
-                        </div>
-                    </div>
-                    <div class="car-tile">
-                        <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">
-                        <div class="car-tile-box">
-                            <h2>Gruzik</h2>
-                            <p>Gowno w papierku po cukierku</p>
-                        </div>
-                        <div class="license_plate">
-                            <div class="country_section">PL</div>
-                            <div class="license_number">KPR 14901</div>
-                        </div>
-                    </div>
-                    <div class="car-tile">
-                        <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">
-                        <div class="car-tile-box">
-                            <h2>Gruzik</h2>
-                            <p>Gowno w papierku po cukierku</p>
-                        </div>
-                        <div class="license_plate">
-                            <div class="country_section">PL</div>
-                            <div class="license_number">KPR 14901</div>
-                        </div>
-                    </div>
-                    <div class="car-tile">
-                        <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">
-                        <div class="car-tile-box">
-                            <h2>Gruzik</h2>
-                            <p>Gowno w papierku po cukierku</p>
-                        </div>
-                        <div class="license_plate">
-                            <div class="country_section">PL</div>
-                            <div class="license_number">KPR 14901</div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
+
                 </div>
 
 

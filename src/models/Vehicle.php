@@ -2,18 +2,18 @@
 
 class Vehicle{
     private $id;
-    private string $brand;
-    private string $model;
-    private string $nickname;
-    private string $course;
-    private string $platenumber;
-    private string $countryoforigin;
-    private string $fuel;
-    private string $note;
+    private $brand;
+    private $model;
+    private $nickname;
+    private $course;
+    private $platenumber;
+    private $countryoforigin;
+    private $fuel;
+    private $note;
     private int $id_user;
 
 
-    public function __construct($id, int $id_user, string $brand, string $model, string $nickname, string $course, string $platenumber, string $countryoforigin, string $fuel, string $note)
+    public function __construct($id, int $id_user, $brand, $model, $nickname, $course, $platenumber, $countryoforigin, $fuel, $note)
     {
         $this->brand = $brand;
         $this->id = $id;
@@ -36,7 +36,7 @@ class Vehicle{
     }
 
 
-    public function getBrand(): string
+    public function getBrand()
     {
         return $this->brand;
     }
@@ -46,7 +46,7 @@ class Vehicle{
         $this->brand = $brand;
     }
 
-    public function getModel(): string
+    public function getModel()
     {
         return $this->model;
     }
@@ -56,7 +56,7 @@ class Vehicle{
         $this->model = $model;
     }
 
-    public function getNickname(): string
+    public function getNickname()
     {
         return $this->nickname;
     }
@@ -66,7 +66,7 @@ class Vehicle{
         $this->nickname = $nickname;
     }
 
-    public function getCourse(): string
+    public function getCourse()
     {
         return $this->course;
     }
@@ -76,7 +76,7 @@ class Vehicle{
         $this->course = $course;
     }
 
-    public function getPlatenumber(): string
+    public function getPlatenumber()
     {
         return $this->platenumber;
     }
@@ -86,7 +86,7 @@ class Vehicle{
         $this->platenumber = $platenumber;
     }
 
-    public function getCountryoforigin(): string
+    public function getCountryoforigin()
     {
         return $this->countryoforigin;
     }
@@ -96,7 +96,7 @@ class Vehicle{
         $this->countryoforigin = $countryoforigin;
     }
 
-    public function getFuel(): string
+    public function getFuel()
     {
         return $this->fuel;
     }
@@ -106,7 +106,7 @@ class Vehicle{
         $this->fuel = $fuel;
     }
 
-    public function getNote(): string
+    public function getNote()
     {
         return $this->note;
     }

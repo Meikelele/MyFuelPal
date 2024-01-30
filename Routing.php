@@ -4,6 +4,7 @@ require_once 'src/controllers/DefaultController.php';
 require_once 'src/controllers/SecurityController.php';
 require_once 'src/controllers/ProjectController.php';
 require_once 'src/controllers/VehicleController.php';
+require_once 'src/controllers/APIController.php';
 
 class Routing {
 
@@ -40,8 +41,8 @@ class Routing {
 
         //otwarcie samego adresu localhost:8080
         $action = $action ?: 'index';
-
-        $object->$action();
+        $id = explode("/", $url)[1] ?? '';
+        $object->$action($id);
 
     }
 
