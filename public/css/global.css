@@ -2,86 +2,44 @@ html
 {
     font-size: 10px;
 }
-main > .elements
-{
-    background-color: #fcfcfc;
-    width: calc((100vw / 3) * 2);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    padding: 2em;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-
-main > .sidebar
-{
-    background-color: rgb(234, 139, 71);
-    width: calc(100vw / 3);
-    align-self: flex-start;
+body::-webkit-scrollbar {
+    display: none;
 }
 
-.elements > .container > img 
-{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-
-    /* zamiast siatki GRID 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    padding: 2em; */
-}
 /* ======================================================================== */
 /*              WLASCIWA CZESC GLOBAL CSS                                   */
 /* ======================================================================== */
 body
-{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    /* color: #fcfcfc; */
-    margin: 0;
-    padding: 0;
-    background-color: #fcfcfc;
-}
+ {
 
-main
-{
-    width: 100vw;
-    height: 100vh;
-}
+ }
 
-.flex-column-center
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-row-center-center
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /* ======================================================================== */
 /*                       SYLOWANIE NAWIGACJI                                */
 /* ======================================================================== */
-.base-container > nav > a.icon {
+.mycars > a.icon {
     font-size: 3rem;
     color: black;
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
+
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 
 }
 
 .base-container
 {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
+    flex-direction: column;
+    width: 28rem;
 }
 
 .base-container > nav > .logo > p
@@ -159,7 +117,7 @@ main
 }
 
 .base-container > nav > #myLinks > ul > li:last-child{
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     width: 100%;
 
@@ -169,8 +127,3 @@ main
     font-size: 1em;
 }
 
-@media screen and (max-device-width: 760px) {
-
-
-
-}
