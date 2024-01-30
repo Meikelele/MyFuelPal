@@ -15,43 +15,15 @@
     <title>settings</title>
 </head>
 <body>
-<div class="base-container">
-    <nav>
-        <div class="logo">
-            <p>MyFuelPal</p>
-        </div>
-        <ul>
-            <li>
-                <i class="fa-solid fa-house"></i>
-                <a href="#home" class="button">Home</a>
-            </li>
 
-            <li>
-                <i class="fa-solid fa-car"></i>
-                <a href="#home" class="button">My Cars</a>
-            </li>
-
-            <li>
-                <i class="fa-solid fa-gas-pump"></i>
-                <a href="#home" class="button">My Fuelpal</a>
-            </li>
-
-            <li>
-                <i class="fa-solid fa-user"></i>
-                <a href="#home" class="button">Profile</a>
-            </li>
-
-            <li>
-                <i class="fa-solid fa-gear"></i>
-                <a href="#home" class="button">Settings</a>
-            </li>
-
-
-
-        </ul>
-    </nav>
+<?php
+include 'common/nav.php'
+?>
 
     <main>
+        <div class="logo">
+            <h2>My<span>Fuel</span>Pal</h2>
+        </div>
         <section class="settings">
             <div class="settings-text">
                 <p class="header">Settings</p>
@@ -73,6 +45,10 @@
                     <p>Change email</p>
                     <button>change</button>
                 </div>
+                <div class="option" style="margin-top: 1.5rem;">
+                    <p>Destroy all cookies</p>
+                    <button style="background-color: crimson; color: beige;">Destroy</button>
+                </div>
             </div>
 
 
@@ -80,7 +56,7 @@
         </section>
 
     </main>
-</div>
+
 
 
 
