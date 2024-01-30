@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+main{
+    /* background-color: beige; */
+    color: black;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+}
+
+.base-container > h2 {
+    padding: 2rem 0;
+    text-align: center;
+    color: inherit;
+    /*text-transform: uppercase;*/
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.base-container > h2 > span {
+    font-weight: 900;
+}
+
+
+.mycars
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.mycars .logo {
+    display: none;
+}
+
+.mycars > .your-cars-top-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mycars > .your-cars-top-bar > p
+{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0 0 0 2rem;
+}
+
+.just-line
+{
+    width: 97%;
+    margin: auto;
+    border: 1.50px #E8E8E8 solid;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* ---------------------------- */
+/*      STYLOWANIE CAR TILE     */
+/* ---------------------------- */
+.car-tiles,
+.fuel-notes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-tile
+{
+    margin-left: 2em;
+    width: 22rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.car-tile > img
+{
+    width: 100%;
+    height: 10em;
+    border-radius: 1em 1em 0em 0em;
+}
+
+
+
+button
+{
+    font-size: 1.9rem;
+    border: none;
+    background: #fcfcfc;
+    margin-right: 2rem;
+    text-decoration: underline;
+}
+
+button:active,
+button:hover
+{
+    transform: scale(0.98);
+}
+
+/* ---------------------------- */
+/* STYLOWANIE LICENSE PLATE     */
+/* ---------------------------- */
+.license_plate{
+    background-color: #fcfcfc;
+    width: 10em;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    display: flex;
+
+    font-weight: bold;
+
+    justify-content: space-between;
+    align-items: center;
+
+
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+
+
+
+}
+.country_section{
+    width: 2em;
+    height: 100%;
+    background-color: #3056bf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    border-radius: 0.25em 0 0 0.25em;
+}
+
+.license_number{
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*background-color: #fcfcfc;*/
+
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------------------------- */
+/*      STYLOWANIE FUEL NOTE    */
+/* ---------------------------- */
+
+.fuel-note
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    width: 36rem;
+    height: 11rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    box-shadow: 0px 10px 30px 3px rgba(5, 16, 55, 0.15);
+    border-radius: 6px;
+
+
+}
+
+.fuel-note-top
+{
+    display: flex;
+}
+
+.first
+{
+    width: 21rem;
+    height: 8rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.first > p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.first > i
+{
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.first > .first-date,
+.second > .second-date
+{
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.first > .first-date > .first-text,
+.second > .second-date > .second-text
+{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    text-align: center;
+}
+
+.first > .first-date > .first-subtext,
+.second > .second-date > .second-subtext
+{
+    color: gray;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.second
+{
+    background-color: white;
+    width: 15rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.second > i
+{
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+.third
+{
+    display: flex;
+    background-color: white;
+    height: 3rem;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+}
+
+.third > p
+{
+    margin: 0;
+    text-align: center;
+    margin-left: 1rem;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.fuel-note-standing-line
+{
+    height: 90%;
+    margin: auto;
+    border: 0.1rem #E8E8E8 solid;
+}
+
+.fuel-note-horizontal-line
+{
+    width: 90%;
+    margin: auto;
+    border: 0.1rem #E8E8E8 solid;
+}
+
+.mobile-menu
+{
+    display: none;
+}
+
+
+
+
+.add-new-car {
+    width: 12rem;
+    height: 3rem;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    text-decoration: none;
+
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: black;
+
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+
+
+}
+
+button:active .add-new-car,
+button:hover .add-new-car
+{
+    transform: scale(0.99);
+}
+
+
+.add-new-car
+{
+    background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    body {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+
+    }
+
+    .base-container
+    {
+        padding-top: 8rem;
+        display: none;
+    }
+
+
+    .mobile-menu
+    {
+        width: 100vw;
+        height: 8rem;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        background-color: #fcfcfc;
+        bottom: 0;
+        order: 1;
+        position: fixed;
+
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 2rem 2rem 0 0;
+
+    }
+
+    .mobile-menu i {
+        font-size: 3rem;
+        color: black;
+    }
+
+    .fuel-note
+    {
+        margin: 2rem 0 0;
+        padding: 0;
+        align-self: center;
+
+        width: 90%;
+        height: 7rem;
+
+        box-shadow: 0px 10px 30px 3px rgba(5, 16, 55, 0.15);
+        border-radius: 6px;
+    }
+    .first
+    {
+        width: 15rem;
+        height: 5.5rem;
+    }
+    .first > .first-date > .first-text,
+    .second > .second-date > .second-text {
+        font-size: 1.5rem;
+    }
+
+    .second {
+        width: 10rem;
+        height: 5.5rem;
+    }
+
+    .first > .first-date > .first-subtext,
+    .second > .second-date > .second-subtext {
+        font-size: 1rem;
+    }
+
+    .mycars {
+        flex-wrap: wrap;
+        margin-top: 0rem
+    }
+
+    .mycars .logo {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+
+    }
+
+    .mycars .logo h2 {
+        padding: 1rem 0;
+        text-align: center;
+        color: inherit;
+        /*text-transform: uppercase;*/
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .mycars .logo span {
+        font-weight: 900;
+    }
+
+    .car-tile h2 {
+        font-size: 2.5rem;
+
+    }
+
+    .car-tile p {
+        font-size: 1.5rem;
+        text-wrap: wrap;
+    }
+
+    .license_plate {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .license_number {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fuel-notes {
+        justify-content: space-around;
+    }
+
+
+
+
+
+
+}
+
+
+
