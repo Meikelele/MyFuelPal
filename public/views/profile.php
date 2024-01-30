@@ -15,61 +15,43 @@
     <title>profile</title>
 </head>
 <body>
-<div class="base-container">
-    <nav>
-        <div class="logo">
-            <p>MyFuelPal</p>
-        </div>
-        <ul>
-            <li>
-                <i class="fa-solid fa-house"></i>
-                <a href="#home" class="button">Home</a>
-            </li>
 
-            <li>
-                <i class="fa-solid fa-car"></i>
-                <a href="#home" class="button">My Cars</a>
-            </li>
-
-            <li>
-                <i class="fa-solid fa-gas-pump"></i>
-                <a href="#home" class="button">My Fuelpal</a>
-            </li>
-
-            <li>
-                <i class="fa-solid fa-user"></i>
-                <a href="#home" class="button">Profile</a>
-            </li>
-
-            <li>
-                <i class="fa-solid fa-gear"></i>
-                <a href="#home" class="button">Settings</a>
-            </li>
-
-
-
-        </ul>
-    </nav>
+<?php
+include 'common/nav.php'
+?>
 
     <main>
         <section class="profile">
+            <div class="logo">
+                <h2>My<span>Fuel</span>Pal</h2>
+            </div>
+
             <div class="profile-logo">
                  <img src="public/images/triss-merigold-avatar.jpeg" alt="profile-logo.png">
             </div>
 
             <div class="profile-name-with-email">
-                <p class="header">Triss Merigold</p>
-                <p class="email-text">triss.merigold@admin.pk.edu.pl</p>
-            </div>
-            
-            
-            
-            
-            </section>
+                <p class="header">
+                    <?php
+                        session_start();
+                        echo $_SESSION['User']->getName()." ".$_SESSION['User']->getSurname();
 
+//                        echo $_SESSION['User'];
+                    ?>
+                    </p>
+                <p class="email-text">
+                    <?php
+                        echo $_SESSION['User']->getEmail();
+                    ?>
+                </p>
+            </div>
+            <a href="/logout">Logout</a>
+            
+            
+            
+            
         </section>
     </main>
-</div>
 
 
 

@@ -1,38 +1,166 @@
-.profile
-{
+body {
+    display: flex;
+}
+
+main{
+    /* background-color: beige; */
+    color: black;
+    margin-left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    margin-top: 10rem;
-    margin-right: 5rem;
-    gap: 5rem;
+    justify-content: flex-start;
+    flex-grow: 1;
 
 }
 
-.profile > .profile-logo
-{
-
-}
-
-.profile > .profile-logo > img
-{
-    width: 20rem;
-    height: 20rem;
-    border-radius: 100%;
-}
-
-.profile > .profile-name-with-email > .header
-{
+.base-container > h2 {
+    padding: 2rem 0;
+    text-align: center;
+    color: inherit;
+    /*text-transform: uppercase;*/
     font-size: 4rem;
-    font-weight: bold;
-    margin: 0;
+    font-weight: 400;
 }
 
-.profile > .profile-name-with-email > .email-text
-{
-    font-size: 2rem;
-    font-weight: bold;
-    color: gray;
-    margin: 1rem 0 0;
+.base-container > h2 > span {
+    font-weight: 900;
 }
+
+.just-line
+{
+    width: 97%;
+    margin: auto;
+    border: 1.50px #E8E8E8 solid;
+}
+
+.profile-logo img
+{
+    width: 15rem;
+    height: 15rem;
+    border: none;
+    border-radius: 100%;
+
+}
+
+.logo {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.profile {
+    display: flex;
+    margin-top: 8rem;
+    margin-left: 5rem;
+    gap: 2rem;
+}
+
+.profile-name-with-email .email-text{
+    text-align: center;
+    font-size: 1.5rem;
+    color: dimgray;
+}
+
+.profile-name-with-email .header
+{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+    body {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .base-container
+    {
+        padding-top: 8rem;
+        display: none;
+    }
+
+
+    .mobile-menu
+    {
+        width: 100vw;
+        height: 8rem;
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        background-color: #fcfcfc;
+        bottom: 0;
+        order: 1;
+        position: fixed;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 2rem 2rem 0 0;
+
+    }
+
+    .mobile-menu i {
+        font-size: 3rem;
+        color: black;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .logo h2 {
+        padding: 1rem 0;
+        text-align: center;
+        color: inherit;
+        /*text-transform: uppercase;*/
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .logo span {
+        font-weight: 900;
+    }
+
+    .profile
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .profile-name-with-email .email-text{
+        text-align: center;
+        font-size: 1.5rem;
+        color: dimgray;
+    }
+
+    .profile-name-with-email .header
+    {
+        font-size: 3.5rem;
+        font-weight: 800;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
