@@ -16,6 +16,10 @@ class VehicleController extends AppController
 
     public function yourcars()
     {
+        if (!$this->isSession())
+        {
+            header('Location: /index');
+        }
         $this->getVehicles();
     }
 
@@ -23,7 +27,7 @@ class VehicleController extends AppController
     {
         if (!$this->isSession())
         {
-            header('Location: /login');
+            header('Location: /index');
         }
 
         if (!$this->isPost()) {
@@ -68,11 +72,6 @@ class VehicleController extends AppController
 
     private function getVehicles()
     {
-        if (!$this->isSession())
-        {
-            header('Location: /login');
-        }
-
         $vehicles = $this->vehicleRepository->getVehicles($_SESSION['User']);
         $this->render('your-cars', ['vehicles' => $vehicles]);
     }

@@ -8,7 +8,6 @@
     Routing::get('index', 'DefaultController');
 
     Routing::get('dashboard', 'DefaultController');
-    Routing::get('yourcars', 'DefaultController');
     Routing::get('yourfuelpal', 'DefaultController');
     Routing::post('addfuelnote', 'DefaultController');
     Routing::post('addcar', 'DefaultController');

@@ -43,9 +43,13 @@ class SecurityController extends AppController
             return $this->render('login', ['messages' => ['User with this email not exist!']]);
         }
 
-        if ($user->getPassword() !== $password) {
+        if (!password_verify($password, $user->getPassword())) {
             return $this->render('login', ['messages' => ['Wrong password!']]);
         }
+
+
+
+
 
 
         session_start();
@@ -87,7 +91,7 @@ class SecurityController extends AppController
 
             $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
-            $user = new User($name, $surname, $email, $password);
+            $user = new User(null, $name, $surname, $email, $hashedPassword);
 
             $this->userRepository->addUser($user);
 

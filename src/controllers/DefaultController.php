@@ -4,7 +4,8 @@ require_once 'AppController.php';
 require_once __DIR__.'/../models/Vehicle.php';
 require_once __DIR__.'/../repository/VehicleRepository.php';
 
-class DefaultController extends AppController {
+class DefaultController extends AppController
+{
 
     protected function checkIfLoggedIn()
     {
@@ -17,17 +18,18 @@ class DefaultController extends AppController {
             exit; // Zakończ proces, aby nie wykonywać dalszych działań
         }
     }
-    public function index() {
-        if($this->isSession())
-        {
+
+    public function index()
+    {
+        if ($this->isSession()) {
             header('Location: /dashboard');
         }
         $this->render('welcome');
     }
 
-    public function dashboard() {
-        if(!$this->isSession())
-        {
+    public function dashboard()
+    {
+        if (!$this->isSession()) {
             header('Location: /index');
         }
 
@@ -36,39 +38,45 @@ class DefaultController extends AppController {
         $this->render('dashboard', ['vehicles' => $vehicles]);
     }
 
-    public function yourcars() {
-        $this->render('your-cars');
-    }
 
-    public function yourfuelpal() {
-        $this->render('your-fuelpal');
-    }
-
-    public function addfuelnote() {
-        $this->render('add-fuel-note');
-    }
-    public function addcar() {
-        $this->render('addcar');
-    }
-
-    public function profile() {
-        if(!$this->isSession())
-        {
+    public function profile()
+    {
+        if (!$this->isSession()) {
             header('Location: /index');
         }
 
         $this->render('profile');
     }
-    public function settings() {
+    public function addcar()
+    {
+        if (!$this->isSession()) {
+            header('Location: /index');
+        }
+
+        $this->render('addcar');
+    }
+
+    public function settings()
+    {
+        if (!$this->isSession()) {
+            header('Location: /index');
+        }
         $this->render('settings');
     }
 
-    public function adminpanel() {
+    public function adminpanel()
+    {
+        if ($this->isSession()) {
+            header('Location: /index');
+        }
         $this->render('adminpanel');
     }
 
-
-//    public function addProject() {
-//        $this->render('test-upload');
-//    }
+    public function yourcars()
+    {
+        if ($this->isSession()) {
+            header('Location: /index');
+        }
+        $this->render('your-cars');
+    }
 }

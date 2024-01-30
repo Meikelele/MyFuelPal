@@ -90,6 +90,29 @@ class APIController extends AppController
             die("Błąd bazy danych (APIController_getFuel()): " . $e->getMessage());
         }
     }
+    
+    public function getVehicles(){
+        try {
+            $stmt = $this->database->connect()->prepare('
+            SELECT * FROM public."vehicle"
+        ');
+
+            $stmt->execute();
+
+            $vehicles = $stmt->fetchAll();
+
+            if (!$vehicles) {
+                //wyrzucic jakis blad zeby wiadomo co nie gra
+                return null;
+            }
+
+            echo json_encode($vehicles);
+        } catch (PDOException $e) {
+            die("Błąd bazy danych (APIController_getVehicles()): " . $e->getMessage());
+        }
+        
+        
+    }
 
 
 
