@@ -25,13 +25,23 @@
             <p class="container-subtext">Fill in yur details to begin</p>
         </div>
 
-       <form class="form" action="register" method="POST">
-           <input name="fullname" type="text" placeholder="Fullname">
+       <form class="form" action="register" method="POST" onsubmit="return validateForm()">
+           <div class="messages">
+               <?php
+               if(isset($messages)){
+                   foreach($messages as $message) {
+                       echo $message;
+                   }
+               }
+               ?>
+           </div>
+           <input name="name" type="text" placeholder="Name">
+           <input name="surname" type="text" placeholder="Surname">
            <input name="email" type="text" placeholder="Email">
            <input name="password" type="password" placeholder="Password">
            <input name="confirmedPassword" type="password" placeholder="Confirm Password">
 
-           <button type="submit"><p>Sing up</p></button>
+           <button type="submit">Sing up</button>
 
         </form>
         

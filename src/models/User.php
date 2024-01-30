@@ -1,19 +1,25 @@
 <?php
 
 class User{
-    private $email;
-    private $password;
-    private $name;
-    private $surname;
+    private int $id;
+    private string $email;
+    private string $password;
+    private string $name;
+    private string $surname;
 
-    public function __construct(string $email, string $password, string $name, string $username)
+    public function __construct(int $id, string $name, string $surname, string $email, string $password)
     {
         $this->email = $email;
         $this->password = $password;
         $this->name = $name;
-        $this->surname = $username;
+        $this->surname = $surname;
+        $this->id = $id;
     }
 
+    public function getId(): int
+    {
+        return $this->id;
+    }
     public function getEmail(): string
     {
         return $this->email;
