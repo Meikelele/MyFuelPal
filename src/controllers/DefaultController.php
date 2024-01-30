@@ -4,20 +4,31 @@ require_once 'AppController.php';
 
 class DefaultController extends AppController {
 
+    protected function checkIfLoggedIn()
+    {
+        // Sprawdzenie, czy użytkownik jest zalogowany (czy ciasteczko istnieje)
+        if (!isset($_COOKIE['user_email'])) {
 
+            // Przekierowanie użytkownika na stronę logowania (lub inną, jeśli to bardziej odpowiednie)
+            $url = "http://$_SERVER[HTTP_HOST]";
+            header("Location: {$url}/login");
+            exit; // Zakończ proces, aby nie wykonywać dalszych działań
+        }
+    }
     public function index() {
+        if($this->isSession())
+        {
+            header('Location: /dashboard');
+        }
         $this->render('welcome');
     }
 
-    public function login() {
-        $this->render('login');
-    }
-
-    public function register() {
-        $this->render('register');
-    }
-
     public function dashboard() {
+        if(!$this->isSession())
+        {
+            header('Location: /index');
+        }
+
         $this->render('dashboard');
     }
 
@@ -32,8 +43,16 @@ class DefaultController extends AppController {
     public function addfuelnote() {
         $this->render('add-fuel-note');
     }
+    public function addcar() {
+        $this->render('addcar');
+    }
 
     public function profile() {
+        if(!$this->isSession())
+        {
+            header('Location: /index');
+        }
+
         $this->render('profile');
     }
     public function settings() {

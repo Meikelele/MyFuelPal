@@ -37,5 +37,15 @@ class AppController {
         print $output;
     }
 
+    protected function isSession() : bool
+    {
+        session_start();
+        if(isset($_SESSION['User']))
+        {
+            return true;
+        }
+        return false;
+    }
+
     
 }
