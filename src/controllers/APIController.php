@@ -114,6 +114,71 @@ class APIController extends AppController
         
     }
 
+    public function getCars()
+    {
+        try {
+            $stmt = $this->database->connect()->prepare('
+            SELECT * FROM public.user_vehicles WHERE "id" = :id_user
+        ');
+            session_start();
+            $stmt->bindParam(':id_user', $_SESSION['User']->getId(), PDO::PARAM_STR);
+            $stmt->execute();
+
+
+            $vehicles = $stmt->fetchAll();
+
+            if (!$vehicles) {
+                //wyrzucic jakis blad zeby wiadomo co nie gra
+                return null;
+            }
+
+            echo json_encode($vehicles);
+        } catch (PDOException $e) {
+            die("Błąd bazy danych (APIController_getVehicles()): " . $e->getMessage());
+        }
+    }
+
+    public function getFuelnotes()
+    {
+        try {
+            $stmt = $this->database->connect()->prepare('
+            SELECT * FROM public.fuelnote_extended WHERE "id_user" = :id_user
+        ');
+            session_start();
+            $stmt->bindParam(':id_user', $_SESSION['User']->getId(), PDO::PARAM_STR);
+            $stmt->execute();
+
+
+            $vehicles = $stmt->fetchAll();
+
+            if (!$vehicles) {
+                //wyrzucic jakis blad zeby wiadomo co nie gra
+                return null;
+            }
+
+            echo json_encode($vehicles);
+        } catch (PDOException $e) {
+            die("Błąd bazy danych (APIController_getFuelnote()): " . $e->getMessage());
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

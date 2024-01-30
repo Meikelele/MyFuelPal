@@ -5,6 +5,7 @@ require_once 'src/controllers/SecurityController.php';
 require_once 'src/controllers/ProjectController.php';
 require_once 'src/controllers/VehicleController.php';
 require_once 'src/controllers/APIController.php';
+require_once 'src/controllers/FuelNoteController.php';
 
 class Routing {
 

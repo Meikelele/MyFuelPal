@@ -43,15 +43,6 @@ class VehicleController extends AppController
         $id_brand = $_POST['brand'];
         $id_model = $_POST['model'];
 
-//        echo "Nickname: " . $nickname . "<br>";
-//        echo "Course: " . $course . "<br>";
-//        echo "License Number: " . $platenumber . "<br>";
-//        echo "Country of Origin: " . $countryoforigin . "<br>";
-//        echo "Fuel Type: " . $fuel . "<br>";
-//        echo "Note: " . $note . "<br>";
-//        echo "Brand ID: " . $id_brand . "<br>";
-//        echo "Model ID: " . $id_model . "<br>";
-
         $vehicleRepository = new VehicleRepository();
 
         //walidacja

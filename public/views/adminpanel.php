@@ -6,21 +6,30 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="public/css/global.css">
+    <link rel="stylesheet" href="public/css/profile.css">
+
     <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous"></script>
 
-    <title>TEST</title>
+    <title>adminpanel</title>
 </head>
 <body>
+
+<?php
+include 'common/nav.php'
+?>
+
+<main>
+
+</main>
+
 
 
 
 </body>
+
+
+
+
 </html>
-
-<!--
-SHIFT + ENTER  wstawienie nowej lini
-SHITD + OPTION + D skopiowanie aktualnej linii w dol
-
-
--->

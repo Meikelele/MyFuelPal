@@ -15,11 +15,12 @@
     <!-- SKRYPTY - JS -->
     <script src="https://kit.fontawesome.com/996b7b3bef.js" crossorigin="anonymous" defer></script>
     <script type="text/javascript" src="../public/js/mobile-menu.js" defer></script>
-    
+    <script src="public/js/fuelnote_v2.js" defer></script>
+
     <title>dashboard</title>
 </head>
 
-<body>
+<body onload="loadData()">
 <?php
 include 'common/nav.php'
 ?>
@@ -63,203 +64,8 @@ include 'common/nav.php'
                         <p>Your Fuelpal</p>
                     <a href="/yourfuelpal">View all</a>
                 </div>
-
-                <div class="fuel-notes">
-                    <div class="fuel-note">
-                        <div class="fuel-note-top">
-                            <div class="first">
-                                <i class="fa-solid fa-clock"></i>
-                                <div class="first-date">
-                                    <p class="first-text">10:25</p>
-                                    <p class="first-subtext">Monday, 10th Oct 2023 Gruz - E36</p>
-
-                                </div>
-                            </div>
-                            <!--                        <div class="fuel-note-standing-line"></div>-->
-                            <div class="second">
-                                <i class="fa-solid fa-gas-pump"></i>
-                                <div class="second-date">
-                                    <p class="second-text">200 zł</p>
-                                    <p class="second-subtext">34,5 L</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="fuel-note-horizontal-line"></div>
-                        <div class="third">
-                            <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>
-                        </div>
-                    </div>
-                    <div class="fuel-note">
-                        <div class="fuel-note-top">
-                            <div class="first">
-                                <i class="fa-solid fa-clock"></i>
-                                <div class="first-date">
-                                    <p class="first-text">10:25</p>
-                                    <p class="first-subtext">Monday, 10th Oct 2023 Gruz - E36</p>
-
-                                </div>
-                            </div>
-                            <!--                        <div class="fuel-note-standing-line"></div>-->
-                            <div class="second">
-                                <i class="fa-solid fa-gas-pump"></i>
-                                <div class="second-date">
-                                    <p class="second-text">200 zł</p>
-                                    <p class="second-subtext">34,5 L</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="fuel-note-horizontal-line"></div>
-                        <div class="third">
-                            <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>
-                        </div>
-                    </div>
-                    <div class="fuel-note">
-                        <div class="fuel-note-top">
-                            <div class="first">
-                                <i class="fa-solid fa-clock"></i>
-                                <div class="first-date">
-                                    <p class="first-text">10:25</p>
-                                    <p class="first-subtext">Monday, 10th Oct 2023 Gruz - E36</p>
-
-                                </div>
-                            </div>
-                            <!--                        <div class="fuel-note-standing-line"></div>-->
-                            <div class="second">
-                                <i class="fa-solid fa-gas-pump"></i>
-                                <div class="second-date">
-                                    <p class="second-text">200 zł</p>
-                                    <p class="second-subtext">34,5 L</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="fuel-note-horizontal-line"></div>
-                        <div class="third">
-                            <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>
-                        </div>
-                    </div>
-                    <div class="fuel-note">
-                        <div class="fuel-note-top">
-                            <div class="first">
-                                <i class="fa-solid fa-clock"></i>
-                                <div class="first-date">
-                                    <p class="first-text">10:25</p>
-                                    <p class="first-subtext">Monday, 10th Oct 2023 Gruz - E36</p>
-
-                                </div>
-                            </div>
-                            <!--                        <div class="fuel-note-standing-line"></div>-->
-                            <div class="second">
-                                <i class="fa-solid fa-gas-pump"></i>
-                                <div class="second-date">
-                                    <p class="second-text">200 zł</p>
-                                    <p class="second-subtext">34,5 L</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="fuel-note-horizontal-line"></div>
-                        <div class="third">
-                            <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>
-                        </div>
-                    </div>
-                    <div class="fuel-note">
-                        <div class="fuel-note-top">
-                            <div class="first">
-                                <i class="fa-solid fa-clock"></i>
-                                <div class="first-date">
-                                    <p class="first-text">10:25</p>
-                                    <p class="first-subtext">Monday, 10th Oct 2023 Gruz - E36</p>
-
-                                </div>
-                            </div>
-                            <!--                        <div class="fuel-note-standing-line"></div>-->
-                            <div class="second">
-                                <i class="fa-solid fa-gas-pump"></i>
-                                <div class="second-date">
-                                    <p class="second-text">200 zł</p>
-                                    <p class="second-subtext">34,5 L</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="fuel-note-horizontal-line"></div>
-                        <div class="third">
-                            <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>
-                        </div>
-                    </div>
-                    <div class="fuel-note">
-                        <div class="fuel-note-top">
-                            <div class="first">
-                                <i class="fa-solid fa-clock"></i>
-                                <div class="first-date">
-                                    <p class="first-text">10:25</p>
-                                    <p class="first-subtext">Monday, 10th Oct 2023 Gruz - E36</p>
-
-                                </div>
-                            </div>
-                            <!--                        <div class="fuel-note-standing-line"></div>-->
-                            <div class="second">
-                                <i class="fa-solid fa-gas-pump"></i>
-                                <div class="second-date">
-                                    <p class="second-text">200 zł</p>
-                                    <p class="second-subtext">34,5 L</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="fuel-note-horizontal-line"></div>
-                        <div class="third">
-                            <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>
-                        </div>
-                    </div>
-<!--                    <div class="fuel-note">-->
-<!--                        <div class="fuel-note-top">-->
-<!--                            <div class="first">-->
-<!--                                <i class="fa-solid fa-clock"></i>-->
-<!--                                <div class="first-date">-->
-<!--                                    <p class="first-text">10:25</p>-->
-<!--                                    <p class="first-subtext">Monday, 10th Oct 2023 Gruz - E36</p>-->
-<!---->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                                                 <div class="fuel-note-standing-line"></div>-->
-<!--                            <div class="second">-->
-<!--                                <i class="fa-solid fa-gas-pump"></i>-->
-<!--                                <div class="second-date">-->
-<!--                                    <p class="second-text">200 zł</p>-->
-<!--                                    <p class="second-subtext">34,5 L</p>-->
-<!--                                </div>-->
-<!---->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="fuel-note-horizontal-line"></div>-->
-<!--                        <div class="third">-->
-<!--                            <p>Lorem ipsum cos tam cos tam nie wiem. cos mondrego</p>-->
-<!--                        </div>-->
-<!---->
-<!---->
-<!--                    </div>-->
-                </div>
-
-
-
-
-            <!-- <div class="car-tile">
-                <img src="public/uploads/<?= $project->getImage() ?>" alt="gruz_sokrates.jpg">
-                <div>
-                    <h2><?= $project->getTitle() ?></h2>
-                    <p><?= $project->getDescription() ?></p>
-                </div>
-                <div class="license_plate">
-                    <div class="country_section">PL</div>
-                    <div class="license_number">BL 19957</div>
-                </div>
-            </div> -->
-
             </section>
+            <div id="fuel-notes"></div>
         </main>
 </body>
 </html>
