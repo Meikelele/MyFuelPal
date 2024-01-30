@@ -1,63 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 
-.container-text-myfuelpal
-{
-    color: #2b2b2b;
-    text-align: center;
-    
+}
+
+.logo {
     font-size: 4rem;
-    font-weight: 800;
-}
-.container-text-myfuelpal > p
-{
-    margin: 0rem;
+    color: #2b2b2b;
 }
 
-.container-subtext
+.logo h2 {
+    padding: 2rem 0 0 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.logo span {
+    font-weight: 900;
+}
+
+.under-logo h3
 {
     color: #7A7A7A;
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     text-align: center;
 }
 
-.container-button-signup
-{
-    width: 26rem;
-    height: 5rem;
-    margin-top: 1rem;
-
-    border-radius: 1rem;
-    background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
-    
+a{
+    text-decoration: none;
 }
 
-.container-button-login
-{
+ a.but-singup, a.but-login, .but-login-with-fb {
+     justify-content: center;
+     align-items: center;
+    display: flex;
     width: 26rem;
     height: 5rem;
-    margin-bottom: 1rem;
-
+    margin: 0.5rem 0;
     border-radius: 1rem;
-    background: #18CE2A;
-}
 
-.container-button-login > p,
-.container-button-signup > p,
-.container-button-loginwithfb > p
-{
     font-size: 1.75rem;
     font-weight: bold;
     color: white;
-    margin: 0;
+
+    border: 0;
+    cursor: pointer;
+
 }
 
-.container-button-loginwithfb
+button:active,
+button:hover
 {
-    width: 26rem;
-    height: 5rem;
-    flex-shrink: 0;
+    transform: scale(0.98);
+}
 
-    border-radius: 1rem;
+
+.but-singup
+{
+    background: linear-gradient(271deg, #FE904B 7.64%, #FB724C 90.68%);
+}
+
+.but-login
+{
+    background: #18CE2A;
+}
+
+.but-login-with-fb
+{
+    flex-shrink: 0;
     background: #3B5998;
 
     text-align: center;
@@ -73,20 +93,4 @@
 {
     color: white;
     font-size: 1.75rem;
-}
-
-button
-{
-    border: 0;
-    cursor: pointer;
-}
-
-button:active
-{
-    transform: scale(0.98);
-}
-
-button:hover
-{
-    transform: scale(0.98);
 }
