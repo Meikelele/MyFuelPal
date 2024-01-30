@@ -35,19 +35,24 @@ include 'common/nav.php'
                 </div>
 
                 <div id="cars">
-                    <?php foreach ($vehicles as $vehicle) : ?>
-                        <div class="car-tile">
-                            <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">
-                            <div>
-                                <h2><?= $vehicle->getNickname();?>:</h2>
-                                <p><?= $vehicle->getNote();?></p>
+                    <?php if (!empty($vehicles)) : ?>
+                        <?php foreach ($vehicles as $vehicle) : ?>
+                            <div class="car-tile">
+                                <img src="public/images/triss-merigold-avatar.jpeg" alt="gruz_sokrates.jpg">
+                                <div>
+                                    <h2><?= $vehicle->getNickname(); ?></h2>
+                                    <p><?= $vehicle->getNote(); ?></p>
+                                </div>
+                                <div class="license_plate">
+                                    <div class="country_section"><?= $vehicle->getCountryoforigin(); ?></div>
+                                    <div class="license_number"><?= $vehicle->getPlatenumber(); ?></div>
+                                </div>
                             </div>
-                            <div class="license_plate">
-                                <div class="country_section"><?= $vehicle->getCountryoforigin();?></div>
-                                <div class="license_number"><?= $vehicle->getPlatenumber();?></div>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
+                    <?php else : ?>
+                        <p>Nothing is here.</p>
+                    <?php endif; ?>
+
 
                 </div>
 
