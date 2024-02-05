@@ -144,9 +144,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
   - Look at yours vehicles and fuelnotes at dashboard
 
-    - [ ] **Nested Feature**
-      - Create a community where you can talk about best restaurant
-
 See the [open issues](https://github.com/Meikelele/MyFuelPal.git\issues) for a full list of proposed features (and known issues).
 
 Feel free to tailor the descriptions based on the actual features and their specifics in your project. Providing clear and detailed information can help contributors and users better understand the roadmap and goals of your project.
