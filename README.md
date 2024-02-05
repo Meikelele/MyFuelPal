@@ -1,5 +1,3 @@
-<a name="readme-top">MyFuelPal</a>
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -25,18 +23,15 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
         <li><a href="#database-description">Database description</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -75,19 +70,7 @@ https://postimg.cc/gallery/bbbGHK8 [https://postimg.cc/gallery/bbbGHK8]
 - This implies that each user has a unique role, forming a one-to-one relationship.
 
 ### ERD DIAGRAM
-
-- [![HTML Version](https://img.shields.io/badge/HTML-5-orange)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Built With
-
-- [![HTML Version](https://img.shields.io/badge/HTML-5-orange)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-- [![CSS Version](https://img.shields.io/badge/CSS-3-blue)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [![PHP Version](https://img.shields.io/badge/PHP-v8.2.11-blue)](https://www.php.net/)
-- [![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [![Docker Version](https://img.shields.io/badge/Docker-latest-blue)](https://www.docker.com/)
-- [![Nginx Version](https://img.shields.io/badge/Nginx-1.17.8--alpine-brightgreen)](https://nginx.org/)
+- [url=https://postimg.cc/rKVkhPm5][img]https://i.postimg.cc/rKVkhPm5/ERD.png[/img][/url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,8 +80,6 @@ https://postimg.cc/gallery/bbbGHK8 [https://postimg.cc/gallery/bbbGHK8]
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
 
 ### Installation
 
@@ -115,16 +96,6 @@ To get a local copy up and running follow these simple example steps.
    docker-compose up -d
    ```
 4. Import Database from sql file
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
