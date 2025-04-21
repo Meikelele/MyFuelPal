@@ -1,6 +1,6 @@
 <?php
 
 const USERNAME = 'docker';
-const PASSWORD = 'password';
+const PASSWORD = 'docker';
 const HOST = 'db';
-const DATABASE = 'postgres';
+const DATABASE = 'db';

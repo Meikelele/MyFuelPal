@@ -10,7 +10,7 @@ class UserRepository extends Repository
     {
         try {
             $stmt = $this->database->connect()->prepare('
-            SELECT * FROM public."user" WHERE "email" = :email
+            SELECT * FROM public.user WHERE "email" = :email
         ');
             $stmt->bindParam(':email', $email, PDO::PARAM_STR);
             $stmt->execute();
@@ -38,7 +38,7 @@ class UserRepository extends Repository
     public function addUser(User $user)
     {
         $stmt = $this->database->connect()->prepare('
-            INSERT INTO public."user" (name, surname, email, password)
+            INSERT INTO public.user (name, surname, email, password)
             VALUES (?, ?, ?, ?)
         ');
 
@@ -53,7 +53,7 @@ class UserRepository extends Repository
     public function isEmailUnique($email): bool
     {
         $stmt = $this->database->connect()->prepare('
-        SELECT email FROM public."user"
+        SELECT email FROM public.user
     ');
 
         $stmt->execute();
