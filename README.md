@@ -24,7 +24,7 @@
 
 Clone the repository 
 ```
-git clone <LINK_TO_REPOSITORY> 
+git clone https://github.com/Meikelele/MyFuelPal.git
 ```
 Go to the proper directory
 ```
