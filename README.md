@@ -1,53 +1,75 @@
-<!-- PROJECT LOGO -->
+
 <br />
 <div align="center">
-<h3 align="center">MyFuelPal</h3>
+<h1 align="center">MyFuelPal - v1</h1>
 
   <p align="center">
     "MyFuelPal" is an application to track your hisotry of refulling, allows you to assign the fuelnote to vehicle.
-    <br />
-    <a href="https://github.com/Meikelele/MyFuelPal.git"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    ·
-    <a href="https://github.com/Meikelele/MyFuelPal.git/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Meikelele/MyFuelPal.git/issues">Request Feature</a>
+    
+⚠️ This is the **first version** of the MyFuelPal project and it may not be perfect. ⚠️  
+[Check out the version 2 of MyFuelPal](<LINK_TO_NEW_VERSION>)
+
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#database-description">Database description</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    
-  </ol>
-</details>
+## Tech Stack
+![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
+![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
+![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000)
 
-<!-- ABOUT THE PROJECT -->
+![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=ffffff)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=ffffff)
 
-## About The Project
+## Installation
 
-<br>
-https://postimg.cc/gallery/bbbGHK8 [https://postimg.cc/gallery/bbbGHK8]
+Clone the repository 
+```
+git clone <LINK_TO_REPOSITORY> 
+```
+Go to the proper directory
+```
+cd MyFuelPal
+```
+Run docker-compose 
+```
+docker-compose up --build -d
+```
 
+## Functionalities
+- [ ] **Add your car**  
+  Add your vehicle to your account
+- [ ] **Add your fuel note**  
+  Add and manage fuel notes for your car
+- [ ] **Overview dashboard**  
+  View all your vehicles and fuel notes in one place
+- [ ] **Customize your profile**  
+  Change your profile avatar and personal information
+- [ ] **Account settings**  
+  - Change email  
+  - Change username  
+  - Change password  
+  - Clear all cookies
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Demo
+![Zrzut ekranu 2025-04-21 o 21 42 28](https://github.com/user-attachments/assets/b231b0f2-dc5c-45f7-a0ac-aa8599419635)
+
+### Sign up
+![Zrzut ekranu 2025-04-21 o 21 43 14](https://github.com/user-attachments/assets/efcce809-aae9-4a6a-88ee-c669490a7629)
+
+### Login
+![Zrzut ekranu 2025-04-21 o 21 43 26](https://github.com/user-attachments/assets/e8574138-3fa2-42d9-9e6c-68ca5386efca)
+
+### Home page
+![Zrzut ekranu 2025-04-21 o 21 43 52](https://github.com/user-attachments/assets/cfc79085-fd8c-488b-b24e-a56927678124)
+
+### Adding a car
+![Zrzut ekranu 2025-04-21 o 21 45 27](https://github.com/user-attachments/assets/adce4638-1f4b-4a9e-ba0c-f286e2d3457e)
+
+### Your profile
+![Zrzut ekranu 2025-04-21 o 21 45 48](https://github.com/user-attachments/assets/86b4aa09-ae7e-41f9-ab91-5570eb6278f3)
+
+### Settings
+![Zrzut ekranu 2025-04-21 o 21 45 56](https://github.com/user-attachments/assets/60ec7fe2-5a8c-462b-85c4-d8ce7d7f7370)
 
 ## Database description
 
@@ -70,80 +92,4 @@ https://postimg.cc/gallery/bbbGHK8 [https://postimg.cc/gallery/bbbGHK8]
 - This implies that each user has a unique role, forming a one-to-one relationship.
 
 ### ERD DIAGRAM
-- [url=https://postimg.cc/rKVkhPm5][img]https://i.postimg.cc/rKVkhPm5/ERD.png[/img][/url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Meikelele/MyFuelPal.git
-   ```
-2. Build the Docker image
-   ```sh
-   docker build -t myfuelpal-app .
-   ```
-3. Run Docker Compose
-   ```sh
-   docker-compose up -d
-   ```
-4. Import Database from sql file
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] **Add your car**
-
-  - Add your vehicle to your account
-
-- [ ] **Add your fuelote**
-
-  - Add your fuelnote to your account
-
-- [ ] **Have a overview**
-
-  - Look at yours vehicles and fuelnotes at dashboard
-
-See the [open issues](https://github.com/Meikelele/MyFuelPal.git\issues) for a full list of proposed features (and known issues).
-
-Feel free to tailor the descriptions based on the actual features and their specifics in your project. Providing clear and detailed information can help contributors and users better understand the roadmap and goals of your project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/Features`)
-3. Commit your Changes (`git commit -m 'Add some Features'`)
-4. Push to the Branch (`git push origin features/Features`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTACT -->
-
-## Contact
-
-Michał Bąk - [@MichalLenovo](https://twitter.com/@MichalLenovo) - michal.bak2002@interia.pl
-
-Project Link: [https://github.com/Meikelele/MyFuelPal.git](https://github.com/Meikelele/MyFuelPal.git)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+![ERD](https://github.com/user-attachments/assets/f4dd1885-e006-4333-9a2c-d41a1cf7d518)
